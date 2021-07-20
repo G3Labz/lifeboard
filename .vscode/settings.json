@@ -1,0 +1,6 @@
+{
+    "autoSaveExt": {
+        "debounce": 500, // default is 500
+        //"extensions": [".elm", ".ts"] // if no extension set will be applied to all files
+      }
+}
