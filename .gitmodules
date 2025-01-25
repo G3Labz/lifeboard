@@ -1,0 +1,3 @@
+[submodule "Finances"]
+	path = Finances
+	url = https://github.com/G3Labz/Finances
