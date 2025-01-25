@@ -1,3 +1,12 @@
 [submodule "Finances"]
 	path = Finances
 	url = https://github.com/G3Labz/Finances
+[submodule "housesheet"]
+	path = housesheet
+	url = https://github.com/G3Labz/housesheet
+[submodule "storeroom"]
+	path = storeroom
+	url = https://github.com/G3Labz/storeroom
+[submodule "glorified-todo"]
+	path = glorified-todo
+	url = https://github.com/G3Labz/glorified-todo.git
