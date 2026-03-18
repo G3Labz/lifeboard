@@ -61,6 +61,9 @@ git commit -m "Add $MODULE_NAME as submodule"
 # Update a specific submodule to latest commit
 git submodule update --remote --merge module-name
 
+# Update all submodules to latest commits
+git submodule update --remote --merge
+
 # Remove a submodule
 git submodule deinit -f module-name
 rm -rf .git/modules/module-name
