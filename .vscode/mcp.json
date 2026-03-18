@@ -1,0 +1,26 @@
+{
+  "servers": {
+    "angular-cli": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@angular/cli",
+        "mcp"
+      ]
+    },
+    "axon": {
+      "command": "axon",
+      "args": [
+        "serve"
+      ]
+    },
+    "mikkLF": {
+      "command": "npx",
+      "args": [
+        "-y",
+        "@getmikk/mcp-server",
+        "/home/g3/Repos/g3labz/Lifeboard"
+      ]
+    }
+  }
+}
