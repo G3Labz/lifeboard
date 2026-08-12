@@ -28,8 +28,6 @@ Lifeboard is a modular ecosystem composed of an umbrella repository (`Lifeboard`
                        |       (Application Repo)           |
                        |  - gtodo-fe-angular (SPA App)     |
                        |  - gtodo-be-net (.NET Web API)     |
-                       |  - gtodo-be-ts (TS Domain Core)    |
-                       |  - gtodo-be-angular (Experimental)|
                        +------------------------------------+
 ```
 
@@ -58,8 +56,6 @@ graph TD
         subgraph Glorified Todo App
             GT_FE["gtodo-fe-angular (Todo SPA)"]
             GT_BENET["gtodo-be-net (.NET Web API)"]
-            GT_BETS["gtodo-be-ts (TS Domain Core)"]
-            GT_BEAN["gtodo-be-angular (Experimental BE)"]
         end
     end
 
@@ -111,19 +107,17 @@ $$\text{\{projectName\}-\{layer\}-\{technology\}}$$
 - **Root Legacy Monolith**: `lifeboard-multi-php`
 - **Root Future Shell**: `lifeboard-fe-angular`, `lifeboard-be-net`
 - **Glorified Todo Domain**:
-  - `glorified-todo/gtodo-app` $\rightarrow$ `gtodo-fe-angular`
+  - `glorified-todo/gtodo-fe-angular` $\rightarrow$ `gtodo-fe-angular`
   - `glorified-todo/gtodo-be-net` $\rightarrow$ `gtodo-be-net` (`.Application`, `.Tests`)
-  - `glorified-todo/gtodo-be-ts` $\rightarrow$ `gtodo-be-ts`
-  - `glorified-todo/gtodo-be-angular` $\rightarrow$ `gtodo-be-angular`
 - **Finances Domain**:
-  - `Finances/finances-app` $\rightarrow$ `finances-fe-angular`
-  - `Finances/finances-fe-js` $\rightarrow$ legacy web
+  - `Finances/finances-fe-angular` $\rightarrow$ `finances-fe-angular`
+  - `Finances/finances-multi-js` $\rightarrow$ `finances-multi-js`
 - **Housesheet Domain**:
-  - `housesheet/housesheet-app` $\rightarrow$ `housesheet-fe-angular`
-  - `housesheet/housesheet-multi-js` $\rightarrow$ legacy web
+  - `housesheet/housesheet-fe-angular` $\rightarrow$ `housesheet-fe-angular`
+  - `housesheet/housesheet-multi-js` $\rightarrow$ `housesheet-multi-js`
 - **Storeroom Domain**:
-  - `storeroom/storeroom-app` $\rightarrow$ `storeroom-fe-angular`
-  - `storeroom/storeroom-multi-js` $\rightarrow$ legacy web
+  - `storeroom/storeroom-fe-angular` $\rightarrow$ `storeroom-fe-angular`
+  - `storeroom/storeroom-multi-js` $\rightarrow$ `storeroom-multi-js`
 
 ---
 
@@ -136,13 +130,11 @@ Level 0: Umbrella Repository (Lifeboard)
  │
  ├── Level 1: Application Submodule (glorified-todo)
  │    ├── Level 2: Project Submodule (gtodo-fe-angular)
- │    ├── Level 2: Project Submodule (gtodo-be-net)
- │    ├── Level 2: Project Submodule (gtodo-be-ts)
- │    └── Level 2: Project Submodule (gtodo-be-angular)
+ │    └── Level 2: Project Submodule (gtodo-be-net)
  │
  ├── Level 1: Application Submodule (Finances)
  │    ├── Level 2: Project Submodule (finances-fe-angular)
- │    └── Level 2: Project Submodule (finances-fe-js)
+ │    └── Level 2: Project Submodule (finances-multi-js)
  │
  ├── Level 1: Application Submodule (housesheet)
  │    ├── Level 2: Project Submodule (housesheet-fe-angular)

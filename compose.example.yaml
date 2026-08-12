@@ -21,30 +21,30 @@ services:
       - ASPNETCORE_ENVIRONMENT=Production
     restart: unless-stopped
 
-  gtodo-app:
+  gtodo-fe-angular:
     build:
-      context: ./glorified-todo/gtodo-app
+      context: ./glorified-todo/gtodo-fe-angular
     ports:
       - "4200:80"
     restart: unless-stopped
 
-  finances-app:
+  finances-fe-angular:
     build:
-      context: ./Finances/finances-app
+      context: ./Finances/finances-fe-angular
     ports:
       - "4201:80"
     restart: unless-stopped
 
-  housesheet-app:
+  housesheet-fe-angular:
     build:
-      context: ./housesheet/housesheet-app
+      context: ./housesheet/housesheet-fe-angular
     ports:
       - "4202:80"
     restart: unless-stopped
 
-  storeroom-app:
+  storeroom-fe-angular:
     build:
-      context: ./storeroom/storeroom-app
+      context: ./storeroom/storeroom-fe-angular
     ports:
       - "4203:80"
     restart: unless-stopped
