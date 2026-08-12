@@ -10,3 +10,6 @@
 [submodule "glorified-todo"]
 	path = glorified-todo
 	url = https://github.com/G3Labz/glorified-todo.git
+[submodule "lifeboard-multi-php"]
+	path = lifeboard-multi-php
+	url = https://github.com/G3Labz/lifeboard-multi-php.git
