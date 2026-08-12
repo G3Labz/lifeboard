@@ -76,7 +76,12 @@
   - `storeroom-fe-angular`
 - **Backend Taxonomy (`{projectName}-be-{tech}`)**:
   - `gtodo-be-net` (.NET Web API)
+- **Technology Stack Version Baseline**:
+  - **.NET**: **.NET 10.0 LTS** baseline
+  - **Angular**: **Angular v22** (with TypeScript 7 integration)
+  - **TypeScript**: **TypeScript 7.x** standards
 - **Status**: Workspace tree clean, all submodules linked and pushed to `@G3Labz` remotes on branch `dev-agy`.
+
 
 
 
