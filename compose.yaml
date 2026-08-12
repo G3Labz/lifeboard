@@ -1,0 +1,47 @@
+name: lifeboard-ecosystem
+
+services:
+  lifeboard-multi-php:
+    build:
+      context: ./lifeboard-multi-php
+    ports:
+      - "8080:80"
+    restart: unless-stopped
+
+  gtodo-be-net:
+    build:
+      context: ./glorified-todo/gtodo-be-net
+      dockerfile: gtodo-be-net.Application/Dockerfile
+    ports:
+      - "5000:8080"
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Production
+    restart: unless-stopped
+
+  gtodo-app:
+    build:
+      context: ./glorified-todo/gtodo-app
+    ports:
+      - "4200:80"
+    restart: unless-stopped
+
+  finances-app:
+    build:
+      context: ./Finances/finances-app
+    ports:
+      - "4201:80"
+    restart: unless-stopped
+
+  housesheet-app:
+    build:
+      context: ./housesheet/housesheet-app
+    ports:
+      - "4202:80"
+    restart: unless-stopped
+
+  storeroom-app:
+    build:
+      context: ./storeroom/storeroom-app
+    ports:
+      - "4203:80"
+    restart: unless-stopped

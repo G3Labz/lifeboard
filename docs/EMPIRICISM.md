@@ -57,10 +57,12 @@
 - **`lifeboard-multi-php/`**: Isolated legacy PHP dashboard files (`index.php`, `cabecalho.php`, `footer.php`, `rodape.php`, `conecta.php`, `css/`, `js/`, `fonts/`, `db_access/`, `Dockerfile`, `docker-compose.yml`) into a dedicated `lifeboard-multi-php/` directory, restoring the root `Lifeboard` repository strictly as an umbrella container.
 - **Submodule Project Organization**: Moved legacy web files in `housesheet` and `storeroom` into `housesheet-multi-js/` and `storeroom-multi-js/` project folders with full `docs/ARCHITECTURE.md` and `AGENTS.md` compliance.
 
-### 4. GitHub Organization Repositories Creation & Submodule Registration
-- **`G3Labz` Organization Repositories**: Created 10 private GitHub repositories under `@G3Labz` using `gh` CLI: `lifeboard-multi-php`, `gtodo-app`, `gtodo-be-net`, `gtodo-be-angular`, `finances-app`, `finances-fe-js`, `housesheet-app`, `housesheet-multi-js`, `storeroom-app`, and `storeroom-multi-js`.
-- **Git Submodules Linking**: Initialized local repositories, committed initial code, pushed to `G3Labz` GitHub remotes, and registered all child projects as Git submodules inside their father application repositories.
-- **Automated Commits**: All changes staged and committed automatically on branch `dev-agy`.
+### 4. GitHub Organization Repositories Creation & Submodule Linking
+- **`G3Labz` Organization Repositories**: Created and synchronized all GitHub repositories under `@G3Labz`: `lifeboard-multi-php`, `gtodo-app`, `gtodo-be-net`, `finances-app`, `finances-multi-js`, `housesheet-app`, `housesheet-multi-js`, `storeroom-app`, and `storeroom-multi-js`.
+- **`gtodo-be-ts` Cleanup**: Removed deprecated `gtodo-be-ts` repository (`dead`) from `glorified-todo` submodules.
+- **Git Submodules Linking**: Registered all child Angular SPA apps and `{projectName}-multi-{tech}` legacy web projects as Git submodules inside their father application repositories (`glorified-todo`, `Finances`, `housesheet`, `storeroom`, `Lifeboard`).
+- **Automated Commits**: Staged and committed changes across all father repositories on branch `dev-agy`.
+
 
 
 
