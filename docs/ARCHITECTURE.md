@@ -10,7 +10,7 @@ Lifeboard is a modular ecosystem composed of an umbrella repository (`Lifeboard`
 |                              (Root: /home/g3/.../Lifeboard)                       |
 |                                                                                   |
 |  Legacy Architecture:                                                             |
-|  - lifeboard-multi-php (Root PHP Dashboard: index.php + cabecalho/rodape/css)     |
+|  - lifeboard-legacy (Root PHP Dashboard: index.php + cabecalho/rodape/css)        |
 |                                                                                   |
 |  Target Roadmap Architecture:                                                     |
 |  - lifeboard-fe-angular (Shell Dashboard SPA)                                    |
@@ -21,6 +21,7 @@ Lifeboard is a modular ecosystem composed of an umbrella repository (`Lifeboard`
   |     Finances       |       |    Storeroom    |      |    Housesheet      |
   |  (Application Repo)|       |  (Application Repo)|     |  (Application Repo)|
   |  - finances-fe-angular |     |  - storeroom-fe-angular|  |  - housesheet-fe-angular
+  |  - finances-legacy |       |  - storeroom-legacy |    |  - housesheet-legacy|
   +--------------------+       +-----------------+      +--------------------+
                                          |
                        +-----------------+------------------+
@@ -37,20 +38,23 @@ Lifeboard is a modular ecosystem composed of an umbrella repository (`Lifeboard`
 graph TD
     subgraph Client Tier
         L_FE["lifeboard-fe-angular (Target Shell UI)"]
-        L_PHP["lifeboard-multi-php (Legacy PHP Monolith)"]
+        L_PHP["lifeboard-legacy (Legacy PHP Monolith)"]
     end
 
     subgraph Domain Applications
         subgraph Finances App
             FIN_FE["finances-fe-angular (Finances SPA)"]
+            FIN_LEG["finances-legacy (Legacy Web App)"]
         end
 
         subgraph Storeroom App
             STO_FE["storeroom-fe-angular (Storeroom SPA)"]
+            STO_LEG["storeroom-legacy (Legacy Web App)"]
         end
 
         subgraph Housesheet App
             HOU_FE["housesheet-fe-angular (Housesheet SPA)"]
+            HOU_LEG["housesheet-legacy (Legacy Web App)"]
         end
 
         subgraph Glorified Todo App
@@ -88,45 +92,50 @@ All projects within the `Lifeboard` ecosystem follow the standardized naming tax
 
 $$\text{\{projectName\}-\{layer\}-\{technology\}}$$
 
+### Legacy Project Naming Rule
+All legacy applications are strictly named as:
+
+$$\text{\{projectName\}-legacy}$$
+
+- `lifeboard-legacy` (Legacy PHP dashboard monolith)
+- `finances-legacy` (Legacy web implementation)
+- `housesheet-legacy` (Legacy web implementation)
+- `storeroom-legacy` (Legacy web implementation)
+
 ### Taxonomy Matrix
 
 | Field | Definition | Options / Allowed Values | Examples |
 | :--- | :--- | :--- | :--- |
 | **`projectName`** | Name of the domain application or module (shortened if standard). | `lifeboard`, `gtodo`, `finances`, `housesheet`, `storeroom` | `gtodo`, `lifeboard` |
-| **`layer`** | Architectural tier of the specific project. | `fe` (frontend), `be` (backend), `infra` (infrastructure), `multi` (hybrid/monolith) | `fe`, `be`, `multi` |
+| **`layer`** | Architectural tier of the specific project. | `fe` (frontend), `be` (backend), `infra` (infrastructure), `legacy` (legacy monolith/web) | `fe`, `be`, `legacy` |
 | **`technology`** | Primary framework, language, or platform used. | `angular`, `net`, `ts`, `php`, `js`, `docker`, `terraform` | `angular`, `net`, `php` |
-
-### .NET Multi-Project Structure Rule
-.NET backend repositories (e.g. `gtodo-be-net`) hold all required solution projects directly inside the repository directory structure:
-- `gtodo-be-net.Application`: Primary Web API project, controllers, service registrations, and entry point.
-- `gtodo-be-net.Tests`: Automated unit and integration test suites.
 
 ### Existing & Target Project Mapping
 
 - **Umbrella Repository**: `Lifeboard` (Root)
-- **Root Legacy Monolith**: `lifeboard-multi-php`
+- **Root Legacy Monolith**: `lifeboard-legacy`
 - **Root Future Shell**: `lifeboard-fe-angular`, `lifeboard-be-net`
 - **Glorified Todo Domain**:
   - `glorified-todo/gtodo-fe-angular` $\rightarrow$ `gtodo-fe-angular`
   - `glorified-todo/gtodo-be-net` $\rightarrow$ `gtodo-be-net` (`.Application`, `.Tests`)
 - **Finances Domain**:
   - `Finances/finances-fe-angular` $\rightarrow$ `finances-fe-angular`
-  - `Finances/finances-multi-js` $\rightarrow$ `finances-multi-js`
+  - `Finances/finances-legacy` $\rightarrow$ `finances-legacy`
 - **Housesheet Domain**:
   - `housesheet/housesheet-fe-angular` $\rightarrow$ `housesheet-fe-angular`
-  - `housesheet/housesheet-multi-js` $\rightarrow$ `housesheet-multi-js`
+  - `housesheet/housesheet-legacy` $\rightarrow$ `housesheet-legacy`
 - **Storeroom Domain**:
   - `storeroom/storeroom-fe-angular` $\rightarrow$ `storeroom-fe-angular`
-  - `storeroom/storeroom-multi-js` $\rightarrow$ `storeroom-multi-js`
+  - `storeroom/storeroom-legacy` $\rightarrow$ `storeroom-legacy`
 
 ---
 
 ## 3. Multi-Repo & Submodule Hierarchy
 
-`Lifeboard` utilizes multi-level Git submodules to maintain strict domain boundaries while enabling unified umbrella orchestration.
-
 ```
 Level 0: Umbrella Repository (Lifeboard)
+ │
+ ├── Level 1: Monolith Repository (lifeboard-legacy)
  │
  ├── Level 1: Application Submodule (glorified-todo)
  │    ├── Level 2: Project Submodule (gtodo-fe-angular)
@@ -134,22 +143,20 @@ Level 0: Umbrella Repository (Lifeboard)
  │
  ├── Level 1: Application Submodule (Finances)
  │    ├── Level 2: Project Submodule (finances-fe-angular)
- │    └── Level 2: Project Submodule (finances-multi-js)
+ │    └── Level 2: Project Submodule (finances-legacy)
  │
  ├── Level 1: Application Submodule (housesheet)
  │    ├── Level 2: Project Submodule (housesheet-fe-angular)
- │    └── Level 2: Project Submodule (housesheet-multi-js)
+ │    └── Level 2: Project Submodule (housesheet-legacy)
  │
  └── Level 1: Application Submodule (storeroom)
       ├── Level 2: Project Submodule (storeroom-fe-angular)
-      └── Level 2: Project Submodule (storeroom-multi-js)
+      └── Level 2: Project Submodule (storeroom-legacy)
 ```
 
 ---
 
 ## 4. Technology Stack LTS Versioning Policy
-
-To guarantee stability, enterprise support, and maintainability, non-LTS "stepping stone" versions are strictly avoided in production code bases.
 
 - **.NET**: Active LTS only (.NET 8.0 LTS or nearest upcoming LTS .NET 10.0). Standard Term Support (STS) versions (such as .NET 9.0) are migration stepping stones.
 - **Angular**: Active LTS releases (Angular v18+ LTS).

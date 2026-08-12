@@ -63,11 +63,21 @@
 - **Git Submodules Linking**: Registered all child Angular SPA apps and `{projectName}-multi-{tech}` legacy web projects as Git submodules inside their father application repositories (`glorified-todo`, `Finances`, `housesheet`, `storeroom`, `Lifeboard`).
 - **Automated Commits**: Staged and committed changes across all father repositories on branch `dev-agy`.
 
-### 5. Docker Compose Standardization & `.gitignore` Updates
-- **`compose.yaml` & `compose.example.yaml`**: Provisioned `compose.yaml` and `compose.example.yaml` across the root umbrella workspace and every individual application and child project repository.
-- **`compose.yaml` Ignore Rule**: Configured `.gitignore` across all repositories to ignore local `compose.yaml` files while keeping `compose.example.yaml` tracked in version control as the configuration template.
-- **Stack-Specific `.gitignore` Patterns**: Applied custom ignore rules according to tech stack (Angular/Node build & cache outputs, .NET `bin/`/`obj/`/`appsettings.Development.json`, PHP/Web vendor & environment files).
-- **Automated Commits**: All updates staged and committed automatically on branch `dev-agy`.
+### 6. Submodule Structure & Naming Taxonomy Verification
+- **Legacy Projects Taxonomy (`{projectName}-multi-{tech}`)**: Verified exact naming for legacy implementations:
+  - `lifeboard-multi-php` (Dashboard Monolith)
+  - `finances-multi-js` (Legacy Web)
+  - `housesheet-multi-js` (Legacy Web)
+  - `storeroom-multi-js` (Legacy Web)
+- **Frontend SPA Taxonomy (`{projectName}-fe-angular`)**: Verified exact naming for Angular Standalone projects:
+  - `gtodo-fe-angular`
+  - `finances-fe-angular`
+  - `housesheet-fe-angular`
+  - `storeroom-fe-angular`
+- **Backend Taxonomy (`{projectName}-be-{tech}`)**:
+  - `gtodo-be-net` (.NET Web API)
+- **Status**: Workspace tree clean, all submodules linked and pushed to `@G3Labz` remotes on branch `dev-agy`.
+
 
 
 

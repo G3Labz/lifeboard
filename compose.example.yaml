@@ -4,9 +4,9 @@
 name: lifeboard-ecosystem
 
 services:
-  lifeboard-multi-php:
+  lifeboard-legacy:
     build:
-      context: ./lifeboard-multi-php
+      context: ./lifeboard-legacy
     ports:
       - "8080:80"
     restart: unless-stopped

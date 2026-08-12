@@ -13,3 +13,6 @@
 [submodule "lifeboard-multi-php"]
 	path = lifeboard-multi-php
 	url = https://github.com/G3Labz/lifeboard-multi-php.git
+[submodule "lifeboard-legacy"]
+	path = lifeboard-legacy
+	url = https://github.com/G3Labz/lifeboard-legacy.git
