@@ -76,11 +76,11 @@
   - `storeroom-fe-angular`
 - **Backend Taxonomy (`{projectName}-be-{tech}`)**:
   - `gtodo-be-net` (.NET Web API)
-- **Technology Stack Version Baseline**:
-  - **.NET**: **.NET 10.0 LTS** baseline
-  - **Angular**: **Angular v22** (with TypeScript 7 integration)
-  - **TypeScript**: **TypeScript 7.x** standards
-- **Status**: Workspace tree clean, all submodules linked and pushed to `@G3Labz` remotes on branch `dev-agy`.
+### 7. Application Dependency Upgrade Verification
+- **Angular Frontend Applications (`{projectName}-fe-angular`)**: Updated `package.json` across all Angular Standalone SPAs (`gtodo-fe-angular`, `finances-fe-angular`, `housesheet-fe-angular`, `storeroom-fe-angular`) to Angular `^22.0.0` and TypeScript `~7.0.0`.
+- **.NET Backend (`gtodo-be-net`)**: Updated `gtodo-be-net.csproj` to `<TargetFramework>net10.0</TargetFramework>`.
+- **Status**: All application configurations updated, pushed to GitHub remotes, committed on `dev-agy`, and verified working tree clean.
+
 
 
 
