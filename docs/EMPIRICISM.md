@@ -43,3 +43,19 @@
   - *Resolution*: Simplified `else if` branch condition to `else if (updates.status)`.
 - **Verification**: Angular build verified clean (`npx ng build` exit code 0).
 
+## [2026-08-12] System Architecture Standardization & Submodule Topology
+
+### 1. Naming Convention & Stack LTS Standardization
+- **Pattern Enforced**: Standardized `{projectName}-{layer}-{technology}` taxonomy across all applications and child projects.
+- **Technology Stack Policy**: Standardized baseline target to LTS versions (.NET 8.0/10.0 LTS, Angular v18+ LTS, PHP 8.2+ LTS). Avoid non-LTS stepping stones in production targets.
+
+### 2. Multi-Repo Submodule Documentation Hierarchy
+- **Top-Level Orchestration**: Updated [`docs/ARCHITECTURE.md`](file:///home/g3/Repos/g3labz/Lifeboard/docs/ARCHITECTURE.md) and [`AGENTS.md`](file:///home/g3/Repos/g3labz/Lifeboard/AGENTS.md) with complete system topology diagrams (ASCII & Mermaid), application boundaries, and submodule maps.
+- **Application & Project Compliance**: Provisioned `docs/ARCHITECTURE.md` and `AGENTS.md` across all 4 domain application directories (`glorified-todo`, `Finances`, `housesheet`, `storeroom`) and their child projects (`gtodo-app`, `gtodo-be-net`, `gtodo-be-ts`, `gtodo-be-angular`, `finances-app`, `housesheet-app`, `storeroom-app`).
+
+### 3. Root Legacy PHP Monolith Isolation
+- **`lifeboard-multi-php/`**: Isolated legacy PHP dashboard files (`index.php`, `cabecalho.php`, `footer.php`, `rodape.php`, `conecta.php`, `css/`, `js/`, `fonts/`, `db_access/`, `Dockerfile`, `docker-compose.yml`) into a dedicated `lifeboard-multi-php/` directory, restoring the root `Lifeboard` repository strictly as an umbrella container.
+- **Submodule Project Organization**: Moved legacy web files in `housesheet` and `storeroom` into `housesheet-multi-js/` and `storeroom-multi-js/` project folders with full `docs/ARCHITECTURE.md` and `AGENTS.md` compliance.
+
+
+

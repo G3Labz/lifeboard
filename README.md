@@ -1,71 +1,68 @@
 # Lifeboard
 
-Lifeboard is a modular dashboard-like project that aggregates several local and cloud-based services into a single interface.
+Lifeboard is a modular dashboard-like ecosystem that aggregates several domain applications and services into a unified interface.
 
-## Project Structure
+---
 
-This is a multi-repo project using **Git Submodules**. Each module is maintained in its own repository under the `G3Labz` organization.
+## Architectural Topology & Submodules Map
 
-### Submodules
+This repository operates strictly as an umbrella workspace managing multi-level **Git Submodules**.
 
-- **Finances**: Personal finance management.
-- **Glorified-Todo**: Task and organization tracker.
-- **Housesheet**: Data tracking for household activities.
-- **Storeroom**: Inventory management tool.
-
-## Submodule Management
-
-Since this is a multi-repo (submoduled) workspace, use the following commands to manage modules.
-
-### Adding a Module as a Submodule
-
-If your module is in a separate Git repository, you can add it to Lifeboard:
-
-```bash
-# Add a new submodule
-git submodule add https://github.com/G3Labz/repo-name.git module-name
-
-# Commit the submodule addition
-git add .gitmodules module-name
-git commit -m "Add module-name as submodule"
+```
+Level 0: Umbrella Repository (Lifeboard)
+ │
+ ├── Level 1: Monolith Repository (lifeboard-multi-php)
+ │
+ ├── Level 1: Application Submodule (glorified-todo)
+ │    ├── Level 2: Project Submodule (gtodo-fe-angular)
+ │    ├── Level 2: Project Submodule (gtodo-be-net)
+ │    ├── Level 2: Project Submodule (gtodo-be-ts)
+ │    └── Level 2: Project Submodule (gtodo-be-angular)
+ │
+ ├── Level 1: Application Submodule (Finances)
+ │    ├── Level 2: Project Submodule (finances-fe-angular)
+ │    └── Level 2: Project Submodule (finances-multi-php)
+ │
+ ├── Level 1: Application Submodule (housesheet)
+ │    ├── Level 2: Project Submodule (housesheet-fe-angular)
+ │    └── Level 2: Project Submodule (housesheet-multi-js)
+ │
+ └── Level 1: Application Submodule (storeroom)
+      ├── Level 2: Project Submodule (storeroom-fe-angular)
+      └── Level 2: Project Submodule (storeroom-multi-js)
 ```
 
-**Converting an existing cloned repo to a submodule:**
-```bash
-# If you already have a cloned repo inside the workspace:
-# 1. First, get the remote URL and module name
-cd module-name
-REPO_URL=$(git remote get-url origin)
-MODULE_NAME=${PWD##*/}
+---
 
-# 2. Move the repo out temporarily
-cd ..
-mv "$MODULE_NAME" "../${MODULE_NAME}-backup"
+## Development & Submodule Guidelines
 
-# 3. Add it as a proper submodule
-git submodule add "$REPO_URL" "$MODULE_NAME"
+### 1. Submodule Navigation & Repository Usage
+When building, modifying, or testing code within any application:
+- **Always navigate directly into the child project submodule repositories** (e.g. `glorified-todo/gtodo-be-net`, `Finances/finances-app`, `housesheet/housesheet-app`, `storeroom/storeroom-app`).
+- Each application root contains its own submodule references and application level documentation.
 
-# 4. Remove backup
-rm -rf "../${MODULE_NAME}-backup"
+### 2. Standardized Naming Pattern
+All projects follow `{projectName}-{layer}-{technology}`:
+- **`projectName`**: `lifeboard`, `gtodo`, `finances`, `housesheet`, `storeroom`
+- **`layer`**: `fe` (frontend), `be` (backend), `infra` (infrastructure), `multi` (hybrid/monolith)
+- **`technology`**: `angular`, `net`, `ts`, `php`, `js`, `docker`
 
-# 5. Commit the submodule
-git add .gitmodules "$MODULE_NAME"
-git commit -m "Add $MODULE_NAME as submodule"
-```
+### 3. .NET Repository Structure
+.NET backend repositories (e.g. `gtodo-be-net`) hold all required solution projects directly inside the repository:
+- `gtodo-be-net.Application` (Web API Application entry point)
+- `gtodo-be-net.Tests` (Automated unit/integration tests)
 
-> **Note:** The move-and-readd method is the most reliable way to convert a nested repo into a submodule.
+---
 
-### Managing Submodules
+## Submodule Management Commands
 
 ```bash
-# Update a specific submodule to latest commit
-git submodule update --remote --merge module-name
+# Clone Lifeboard with all submodules recursively
+git clone --recursive https://github.com/G3Labz/Lifeboard.git
 
-# Update all submodules to latest commits
-git submodule update --remote --merge
+# Initialize and fetch submodules in an existing clone
+git submodule update --init --recursive
 
-# Remove a submodule
-git submodule deinit -f module-name
-rm -rf .git/modules/module-name
-git rm -f module-name
+# Update all submodules to latest remote commits
+git submodule update --remote --recursive
 ```

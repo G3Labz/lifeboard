@@ -1,203 +1,43 @@
-# Lifeboard — Architecture Overview
+# Lifeboard — Agent Architecture Guidelines
 
-## Modules
-- **Project Management & Database** (`glorified-todo-gtodo-be-ts-domains`): 75 functions — 25 files, 0 functions
+## Core Directives for Development Agents
+1. **Submodule Repository Directives**: Lifeboard is a multi-level submoduled repository. Agents MUST navigate directly into the target child submodule repository (e.g. `glorified-todo/gtodo-be-net`, `Finances/finances-app`, `housesheet/housesheet-app`, `storeroom/storeroom-app`) when reading, modifying, building, or testing code.
+2. **.NET Project Layout**: .NET backend repositories (e.g. `gtodo-be-net`) hold all required solution projects directly inside the repository root (`gtodo-be-net.Application`, `gtodo-be-net.Tests`).
+3. **Automated Commit Rule**: When operating on branch `dev/agy` (or `dev-agy`), agents are permitted to stage and commit changes automatically upon completing verification.
 
-## Stats
-- 25 files, 75 functions, 1 modules
-- Language: typescript
+---
 
-## Project Management & Database module
-**Location:** glorified-todo/gtodo-be-ts/src/domains/**, glorified-todo/gtodo-be-ts/src/infra/http/**, glorified-todo/gtodo-be-ts/src/**, glorified-todo/gtodo-be-ts/src/infra/models/**, glorified-todo/gtodo-be-ts/src/infra/repositories/**
-**Purpose:** 25 files, 0 functions
+## Architectural Overview & Topology
+Lifeboard is an umbrella workspace (`Lifeboard`) managing nested submodules and multi-layer domain applications.
 
-**Entry points:**
-  - `BaseModelImpl.constructor(model) [glorified-todo/gtodo-be-ts/src/infra/models/BaseModelImpl.ts:8]` — Base model impl.constructor (model)
-  - `OrganizationModel.constructor(organization) [glorified-todo/gtodo-be-ts/src/infra/models/OrganizationModel.ts:8]` — Organization model.constructor (organization)
-  - `ProjectModel.constructor(project) [glorified-todo/gtodo-be-ts/src/infra/models/ProjectModel.ts:9]` — Project model.constructor (project)
-  - `TaskModel.constructor(task) [glorified-todo/gtodo-be-ts/src/infra/models/TaskModel.ts:11]` — Task model.constructor (task)
-  - `HonoServer.constructor() [glorified-todo/gtodo-be-ts/src/infra/http/HonoServer.ts:8]` — Hono server.constructor
+### Naming Taxonomy
+All projects follow `{projectName}-{layer}-{technology}`:
+- **`projectName`**: `lifeboard`, `gtodo`, `finances`, `housesheet`, `storeroom`
+- **`layer`**: `fe` (frontend), `be` (backend), `infra` (infrastructure), `multi` (hybrid/legacy)
+- **`technology`**: `angular`, `net`, `ts`, `php`, `js`, `docker`
 
-## Data Models & Schemas
+### Technology Stack LTS Policy
+- **.NET**: .NET 8.0 LTS / .NET 10.0 LTS (avoid STS releases like .NET 9 in target baselines)
+- **Angular**: v18+ LTS
+- **PHP**: 8.2+ LTS
 
-These files define the project's data structures, schemas, and configuration.
-They are auto-discovered and included verbatim from the source.
+---
 
-### `glorified-todo/gtodo-be-ts/src/infra/models/BaseModelImpl.ts` (model)
+## Modules Taxonomy & Submodules Map
 
-```typescript
-import { BaseEntity } from '@domains/common/models/BaseEntity';
-
-export class BaseModelImpl implements BaseEntity {
-  id: string;
-  createdAt: Date;
-  updatedAt: Date;
-
-  constructor(model: BaseEntity) {
-    this.id = model.id;
-    this.createdAt = model.createdAt;
-    this.updatedAt = model.updatedAt;
-  }
-}
-```
-
-### `glorified-todo/gtodo-be-ts/src/infra/models/OrganizationModel.ts` (model)
-
-```typescript
-import { Organization } from '@domains/organization/models/Organization';
-import { BaseModelImpl } from '@infra/models/BaseModelImpl';
-
-export class OrganizationModel extends BaseModelImpl implements Organization {
-  name: string;
-  description?: string;
-
-  constructor(organization: Organization) {
-    super(organization);
-    this.name = organization.name;
-    this.description = organization.description;
-  }
-}
-```
-
-### `glorified-todo/gtodo-be-ts/src/infra/models/ProjectModel.ts` (model)
-
-```typescript
-import { Project } from '@domains/project/models/Project';
-import { BaseModelImpl } from '@infra/models/BaseModelImpl';
-
-export class ProjectModel extends BaseModelImpl implements Project {
-  name: string;
-  description?: string;
-  organizationId: string;
-
-  constructor(project: Project) {
-    super(project);
-    this.name = project.name;
-    this.description = project.description;
-    this.organizationId = project.organizationId;
-  }
-}
-```
-
-### `glorified-todo/gtodo-be-ts/src/infra/models/TaskModel.ts` (model)
-
-```typescript
-import { Task } from '@domains/task/models/Task';
-import { BaseModelImpl } from '@infra/models/BaseModelImpl';
-
-export class TaskModel extends BaseModelImpl implements Task {
-  title: string;
-  description?: string;
-  completed: boolean;
-  projectId: string;
-  dueDate?: Date;
-
-  constructor(task: Task) {
-    super(task);
-    this.title = task.title;
-    this.description = task.description;
-    this.completed = task.completed;
-    this.projectId = task.projectId;
-    this.dueDate = task.dueDate;
-  }
-}
-```
-
-### `glorified-todo/gtodo-be-ts/src/domains/common/models/BaseEntity.ts` (model)
-
-```typescript
-export interface BaseEntity {
-  id: string;
-  createdAt: Date;
-  updatedAt: Date;
-}
-```
-
-### `glorified-todo/gtodo-be-ts/src/domains/organization/models/Organization.ts` (model)
-
-```typescript
-import { BaseEntity } from '../../common/models/BaseEntity';
-
-export interface Organization extends BaseEntity {
-  name: string;
-  description?: string;
-}
-```
-
-### `glorified-todo/gtodo-be-ts/src/domains/project/models/Project.ts` (model)
-
-```typescript
-import { BaseEntity } from '../../common/models/BaseEntity';
-
-export interface Project extends BaseEntity {
-  name: string;
-  description?: string;
-  organizationId: string;
-}
-```
-
-### `glorified-todo/gtodo-be-ts/src/domains/task/models/Task.ts` (model)
-
-```typescript
-import { BaseEntity } from '../../common/models/BaseEntity';
-
-export interface Task extends BaseEntity {
-  title: string;
-  description?: string;
-  completed: boolean;
-  projectId: string;
-  dueDate?: Date;
-}
-```
-
-### `Dockerfile` (docker)
-
-```dockerfile
-FROM php:7.4-apache
-
-# Copy the current directory contents into the container at /var/www/html
-COPY . /var/www/html/
-
-# Enable Apache mod_rewrite
-RUN a2enmod rewrite
-
-# Expose port 80
-EXPOSE 80
-
-# Start Apache server
-CMD ["apache2-foreground"]
-```
-
-### `docker-compose.yml` (docker)
-
-```yaml
-version: '3.8'
-
-services:
-  web:
-    build: .
-    ports:
-      - "8080:80"
-    volumes:
-      - .:/var/www/html
-```
-
-## File Import Graph
-
-Which files import which — useful for understanding data flow.
-
-### Project Management & Database
-- `glorified-todo/gtodo-be-ts/src/infra/http/HonoServer.ts` → `glorified-todo/gtodo-be-ts/src/infra/http/HttpServer.ts`
-- `glorified-todo/gtodo-be-ts/src/domains/common/repositories/BaseRepository.ts` → `glorified-todo/gtodo-be-ts/src/domains/common/models/BaseEntity.ts`
-- `glorified-todo/gtodo-be-ts/src/domains/organization/models/Organization.ts` → `glorified-todo/gtodo-be-ts/src/domains/common/models/BaseEntity.ts`
-- `glorified-todo/gtodo-be-ts/src/domains/organization/repositories/OrganizationRepository.ts` → `glorified-todo/gtodo-be-ts/src/domains/common/repositories/BaseRepository.ts`, `glorified-todo/gtodo-be-ts/src/domains/organization/models/Organization.ts`
-- `glorified-todo/gtodo-be-ts/src/domains/project/models/Project.ts` → `glorified-todo/gtodo-be-ts/src/domains/common/models/BaseEntity.ts`
-- `glorified-todo/gtodo-be-ts/src/domains/project/repositories/ProjectRepository.ts` → `glorified-todo/gtodo-be-ts/src/domains/common/repositories/BaseRepository.ts`, `glorified-todo/gtodo-be-ts/src/domains/project/models/Project.ts`
-- `glorified-todo/gtodo-be-ts/src/domains/task/models/Task.ts` → `glorified-todo/gtodo-be-ts/src/domains/common/models/BaseEntity.ts`
-- `glorified-todo/gtodo-be-ts/src/domains/task/repositories/TaskRepository.ts` → `glorified-todo/gtodo-be-ts/src/domains/common/repositories/BaseRepository.ts`, `glorified-todo/gtodo-be-ts/src/domains/task/models/Task.ts`
-
-## HTTP Routes
-
-- **GET** `/` → `anonymous` *(glorified-todo/gtodo-be-ts/src/index.ts:25)*
-
-
+- **Umbrella Workspace**: `Lifeboard`
+  - `lifeboard-multi-php` ([`lifeboard-multi-php`](file:///home/g3/Repos/g3labz/Lifeboard/lifeboard-multi-php)): Legacy PHP Dashboard Monolith (`index.php`, `cabecalho.php`, `footer.php`, `conecta.php`)
+  - Target Roadmap: `lifeboard-fe-angular`, `lifeboard-be-net`
+- **Application Submodule**: [`glorified-todo`](file:///home/g3/Repos/g3labz/Lifeboard/glorified-todo)
+  - `gtodo-fe-angular` ([`gtodo-app`](file:///home/g3/Repos/g3labz/Lifeboard/glorified-todo/gtodo-app)): Angular 18+ Standalone SPA
+  - `gtodo-be-net` ([`gtodo-be-net`](file:///home/g3/Repos/g3labz/Lifeboard/glorified-todo/gtodo-be-net)): .NET Web API + Dapper ORM + SQLite (`gtodo-be-net.Application`, `gtodo-be-net.Tests`)
+  - `gtodo-be-ts` ([`gtodo-be-ts`](file:///home/g3/Repos/g3labz/Lifeboard/glorified-todo/gtodo-be-ts)): TypeScript Domain Core & Hono HTTP API
+  - `gtodo-be-angular` ([`gtodo-be-angular`](file:///home/g3/Repos/g3labz/Lifeboard/glorified-todo/gtodo-be-angular)): Experimental Angular SSR Backend
+- **Application Submodule**: [`Finances`](file:///home/g3/Repos/g3labz/Lifeboard/Finances)
+  - `finances-fe-angular` ([`finances-app`](file:///home/g3/Repos/g3labz/Lifeboard/Finances/finances-app)): Angular 18+ Standalone SPA
+- **Application Submodule**: [`housesheet`](file:///home/g3/Repos/g3labz/Lifeboard/housesheet)
+  - `housesheet-fe-angular` ([`housesheet-app`](file:///home/g3/Repos/g3labz/Lifeboard/housesheet/housesheet-app)): Angular 18+ Standalone SPA
+  - `housesheet-multi-js` ([`housesheet-multi-js`](file:///home/g3/Repos/g3labz/Lifeboard/housesheet/housesheet-multi-js)): Legacy Vanilla HTML/JS App
+- **Application Submodule**: [`storeroom`](file:///home/g3/Repos/g3labz/Lifeboard/storeroom)
+  - `storeroom-fe-angular` ([`storeroom-app`](file:///home/g3/Repos/g3labz/Lifeboard/storeroom/storeroom-app)): Angular 18+ Standalone SPA
+  - `storeroom-multi-js` ([`storeroom-multi-js`](file:///home/g3/Repos/g3labz/Lifeboard/storeroom/storeroom-multi-js)): Legacy Vanilla HTML/JS App
