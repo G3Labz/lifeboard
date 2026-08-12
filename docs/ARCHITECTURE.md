@@ -110,6 +110,11 @@ $$\text{\{projectName\}-legacy}$$
 | **`layer`** | Architectural tier of the specific project. | `fe` (frontend), `be` (backend), `infra` (infrastructure), `legacy` (legacy monolith/web) | `fe`, `be`, `legacy` |
 | **`technology`** | Primary framework, language, or platform used. | `angular`, `net`, `ts`, `php`, `js`, `docker`, `terraform` | `angular`, `net`, `php` |
 
+### .NET Multi-Project Structure Rule
+.NET backend repositories (e.g. `gtodo-be-net`) hold all required solution projects directly inside the repository directory structure:
+- `gtodo-be-net.Application`: Primary Web API project, controllers, service registrations, and entry point.
+- `gtodo-be-net.Tests`: Automated unit and integration test suites.
+
 ### Existing & Target Project Mapping
 
 - **Umbrella Repository**: `Lifeboard` (Root)
@@ -156,12 +161,12 @@ Level 0: Umbrella Repository (Lifeboard)
 
 ---
 
-## 4. Technology Stack LTS Versioning Policy
+## 4. Technology Stack Versioning Policy
 
-- **.NET**: Active LTS only (.NET 8.0 LTS or nearest upcoming LTS .NET 10.0). Standard Term Support (STS) versions (such as .NET 9.0) are migration stepping stones.
-- **Angular**: Active LTS releases (Angular v18+ LTS).
+- **.NET**: **.NET 10.0 LTS** baseline for all backend Web API implementations.
+- **Angular**: **Angular v22** (with TypeScript 7 integration) baseline for all frontend SPA applications.
+- **TypeScript**: **TypeScript 7.x** baseline standards.
 - **PHP**: Active LTS releases (PHP 8.2 / 8.3 LTS).
-- **TypeScript**: TS 5.x+ targeting ES2022 / ESNext standards.
 - **Database / ORM**: SQLite (`Microsoft.Data.Sqlite`) with Dapper ORM (`v2.x`).
 
 ---

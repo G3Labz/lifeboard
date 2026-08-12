@@ -16,9 +16,10 @@ All projects follow `{projectName}-{layer}-{technology}` and legacy projects fol
 - **`layer`**: `fe` (frontend), `be` (backend), `infra` (infrastructure), `legacy` (legacy monolith/web)
 - **`technology`**: `angular`, `net`, `ts`, `php`, `js`, `docker`
 
-### Technology Stack LTS Policy
-- **.NET**: .NET 8.0 LTS / .NET 10.0 LTS (avoid STS releases like .NET 9 in target baselines)
-- **Angular**: v18+ LTS
+### Technology Stack Policy
+- **.NET**: **.NET 10.0 LTS** baseline
+- **Angular**: **v22** (with TypeScript 7)
+- **TypeScript**: **TS 7.x**
 - **PHP**: 8.2+ LTS
 
 ---
@@ -29,14 +30,14 @@ All projects follow `{projectName}-{layer}-{technology}` and legacy projects fol
   - `lifeboard-legacy` ([`lifeboard-legacy`](file:///home/g3/Repos/g3labz/Lifeboard/lifeboard-legacy)): Legacy PHP Dashboard Monolith (`index.php`, `cabecalho.php`, `footer.php`, `conecta.php`)
   - Target Roadmap: `lifeboard-fe-angular`, `lifeboard-be-net`
 - **Application Submodule**: [`glorified-todo`](file:///home/g3/Repos/g3labz/Lifeboard/glorified-todo)
-  - `gtodo-fe-angular` ([`gtodo-fe-angular`](file:///home/g3/Repos/g3labz/Lifeboard/glorified-todo/gtodo-fe-angular)): Angular 18+ Standalone SPA
-  - `gtodo-be-net` ([`gtodo-be-net`](file:///home/g3/Repos/g3labz/Lifeboard/glorified-todo/gtodo-be-net)): .NET Web API + Dapper ORM + SQLite (`gtodo-be-net.Application`, `gtodo-be-net.Tests`)
+  - `gtodo-fe-angular` ([`gtodo-fe-angular`](file:///home/g3/Repos/g3labz/Lifeboard/glorified-todo/gtodo-fe-angular)): Angular v22 Standalone SPA
+  - `gtodo-be-net` ([`gtodo-be-net`](file:///home/g3/Repos/g3labz/Lifeboard/glorified-todo/gtodo-be-net)): .NET 10 Web API + Dapper ORM + SQLite (`gtodo-be-net.Application`, `gtodo-be-net.Tests`)
 - **Application Submodule**: [`Finances`](file:///home/g3/Repos/g3labz/Lifeboard/Finances)
-  - `finances-fe-angular` ([`finances-fe-angular`](file:///home/g3/Repos/g3labz/Lifeboard/Finances/finances-fe-angular)): Angular 18+ Standalone SPA
+  - `finances-fe-angular` ([`finances-fe-angular`](file:///home/g3/Repos/g3labz/Lifeboard/Finances/finances-fe-angular)): Angular v22 Standalone SPA
   - `finances-legacy` ([`finances-legacy`](file:///home/g3/Repos/g3labz/Lifeboard/Finances/finances-legacy)): Legacy Web Application
 - **Application Submodule**: [`housesheet`](file:///home/g3/Repos/g3labz/Lifeboard/housesheet)
-  - `housesheet-fe-angular` ([`housesheet-fe-angular`](file:///home/g3/Repos/g3labz/Lifeboard/housesheet/housesheet-fe-angular)): Angular 18+ Standalone SPA
+  - `housesheet-fe-angular` ([`housesheet-fe-angular`](file:///home/g3/Repos/g3labz/Lifeboard/housesheet/housesheet-fe-angular)): Angular v22 Standalone SPA
   - `housesheet-legacy` ([`housesheet-legacy`](file:///home/g3/Repos/g3labz/Lifeboard/housesheet/housesheet-legacy)): Legacy Vanilla HTML/JS App
 - **Application Submodule**: [`storeroom`](file:///home/g3/Repos/g3labz/Lifeboard/storeroom)
-  - `storeroom-fe-angular` ([`storeroom-fe-angular`](file:///home/g3/Repos/g3labz/Lifeboard/storeroom/storeroom-fe-angular)): Angular 18+ Standalone SPA
+  - `storeroom-fe-angular` ([`storeroom-fe-angular`](file:///home/g3/Repos/g3labz/Lifeboard/storeroom/storeroom-fe-angular)): Angular v22 Standalone SPA
   - `storeroom-legacy` ([`storeroom-legacy`](file:///home/g3/Repos/g3labz/Lifeboard/storeroom/storeroom-legacy)): Legacy Vanilla HTML/JS App

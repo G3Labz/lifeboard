@@ -64,11 +64,11 @@
 - **Automated Commits**: Staged and committed changes across all father repositories on branch `dev-agy`.
 
 ### 6. Submodule Structure & Naming Taxonomy Verification
-- **Legacy Projects Taxonomy (`{projectName}-multi-{tech}`)**: Verified exact naming for legacy implementations:
-  - `lifeboard-multi-php` (Dashboard Monolith)
-  - `finances-multi-js` (Legacy Web)
-  - `housesheet-multi-js` (Legacy Web)
-  - `storeroom-multi-js` (Legacy Web)
+- **Legacy Projects Taxonomy (`{projectName}-legacy`)**: Verified exact naming for legacy implementations:
+  - `lifeboard-legacy` (Dashboard Monolith in root workspace)
+  - `finances-legacy` (Legacy Web in `Finances/finances-legacy`)
+  - `housesheet-legacy` (Legacy Web in `housesheet/housesheet-legacy`)
+  - `storeroom-legacy` (Legacy Web in `storeroom/storeroom-legacy`)
 - **Frontend SPA Taxonomy (`{projectName}-fe-angular`)**: Verified exact naming for Angular Standalone projects:
   - `gtodo-fe-angular`
   - `finances-fe-angular`
@@ -77,6 +77,7 @@
 - **Backend Taxonomy (`{projectName}-be-{tech}`)**:
   - `gtodo-be-net` (.NET Web API)
 - **Status**: Workspace tree clean, all submodules linked and pushed to `@G3Labz` remotes on branch `dev-agy`.
+
 
 
 
