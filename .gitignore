@@ -1,2 +1,10 @@
+# Docker Compose local file
+compose.yaml
+
+# Vendor / Agent cache
 *mikk*
 *axon*
+
+# OS
+.DS_Store
+Thumbs.db

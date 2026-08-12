@@ -63,6 +63,11 @@
 - **Git Submodules Linking**: Registered all child Angular SPA apps and `{projectName}-multi-{tech}` legacy web projects as Git submodules inside their father application repositories (`glorified-todo`, `Finances`, `housesheet`, `storeroom`, `Lifeboard`).
 - **Automated Commits**: Staged and committed changes across all father repositories on branch `dev-agy`.
 
+### 5. Docker Compose Standardization
+- **`compose.yaml` & `compose.example.yaml`**: Provisioned `compose.yaml` and `compose.example.yaml` across the root umbrella workspace and every individual application and child project repository.
+- **Service Mesh Port Assignments**: Mapped unified local ports (`lifeboard-multi-php`: 8080, `gtodo-be-net`: 5000, `gtodo-app`: 4200, `finances-app`: 4201, `housesheet-app`: 4202, `storeroom-app`: 4203).
+
+
 
 
 
