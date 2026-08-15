@@ -3,7 +3,14 @@
 ## Core Directives for Development Agents
 1. **Submodule Repository Directives**: Lifeboard is a multi-level submoduled repository. Agents MUST navigate directly into the target child submodule repository (e.g. `glorified-todo/gtodo-be-net`, `Finances/finances-fe-angular`, `housesheet/housesheet-fe-angular`, `storeroom/storeroom-fe-angular`) when reading, modifying, building, or testing code.
 2. **.NET Project Layout**: .NET backend repositories (e.g. `gtodo-be-net`) hold all required solution projects directly inside the repository root (`gtodo-be-net.Application`, `gtodo-be-net.Tests`).
-3. **Automated Commit Rule**: When operating on branch `dev/agy` (or `dev-agy`), agents are permitted to stage and commit changes automatically upon completing verification.
+3. **Automated Commit & Push Policy (`dev-agy`)**:
+   - When operating on branch `dev-agy` (or `dev/agy`), agents are authorized and required to commit and push changes.
+   - Commit after every iteration.
+   - Bump the project version upon each iteration. For projects containing a `package.json`, increment the patch version following `X.Y.Z` semantics (e.g., `npm version patch` or updating the `z` value).
+4. **Testing & Verification Directives**:
+   - Tests are mandatory to ensure code correctness.
+   - **Backend Applications (.NET, Node, Go)**: Strictly follow Test-Driven Development (TDD) — write test cases before implementation and verify.
+   - **Frontend Applications**: Create and execute corresponding tests after each iteration.
 
 ---
 
