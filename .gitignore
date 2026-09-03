@@ -8,3 +8,9 @@ compose.yaml
 # OS
 .DS_Store
 Thumbs.db
+
+# Mikk internal
+.mikk/
+
+# Desloppify local state
+.desloppify/

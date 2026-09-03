@@ -81,6 +81,37 @@
 - **.NET Backend (`gtodo-be-net`)**: Updated `gtodo-be-net.csproj` to `<TargetFramework>net10.0</TargetFramework>`.
 - **Status**: All application configurations updated, pushed to GitHub remotes, committed on `dev-agy`, and verified working tree clean.
 
+## [2026-08-15] Finances Frontend: Hardcoded Value Elimination & Decoupled Transaction Helper
+
+### 1. Hardcoded Value Remediation
+- **Finding**: `FinanceService` contained legacy hardcoded fallbacks and filter constants (`['Gabriel', 'Isys', 'Shared']`, `['Gabriel', 'Isys']`, `b.id !== 'Outros'`, `id !== 'Shared'`, `category === 'Save' || bucket === 'Poupança'`, and hardcoded `'Contas'`/`'Pix'` defaults in parcel generation).
+- **Resolution**:
+  - Replaced hardcoded tab literal unions with domain type `FinanceTab` across components and service.
+  - Added `excludeFromMatrix` to `BucketDefinition`/`BucketDefinitionDto` and `isShared` to `ContributorDefinition`/`ContributorDto` with bidirectional mapping in `finance.mapper.ts`.
+  - Filtered matrix dynamically via `!c.isShared` and `!b.excludeFromMatrix`.
+  - Refactored `savingBucketsCorrelation` to dynamically correlate transactions matching saving bucket IDs rather than fixed category names.
+  - Extracted transaction and multi-month installment generation into pure `TransactionHelper` (`src/app/core/helpers/transaction.helper.ts`), isolating creation logic and allowing dynamic default injection from repository metadata.
+
+## [2026-09-02] Ecosystem-Wide Roadmap & Feature Control Specification
+
+### 1. Specification of `docs/roadmap.md` Across All 14 Projects
+- **Scope**: Created standardized `docs/roadmap.md` for every project across the 3 architectural tiers:
+  1. **Umbrella Workspace**: `Lifeboard`
+  2. **Monolith Dashboard**: `lifeboard-legacy`
+  3. **Finances Domain**: `Finances`, `finances-fe-angular`, `finances-legacy`
+  4. **Glorified Todo Domain**: `glorified-todo`, `gtodo-fe-angular`, `gtodo-be-net`
+  5. **Housesheet Domain**: `housesheet`, `housesheet-fe-angular`, `housesheet-legacy`
+  6. **Storeroom Domain**: `storeroom`, `storeroom-fe-angular`, `storeroom-legacy`
+- **Standardized Document Architecture**:
+  - Metadata & standard taxonomy `{projectName}-{layer}-{technology}`.
+  - Vision & architectural scope within the Lifeboard ecosystem.
+  - Feature Capabilities & Control Matrix with feature flag keys, lifecycle statuses (`Released`, `In Progress`, `Planned`, `Backlog`, `Deprecated`), and target versions.
+  - Concrete release milestone plans (Current, Next, Upcoming, Production/Vision).
+  - Empirical changelog linking completed work to version tags.
+  - Feature control & configuration strategy (environment toggles, repository swapping, application configuration).
+- **Verification**: Verified file creation and markdown integrity across all 14 paths; confirmed Angular production builds clean.
+
+
 
 
 
