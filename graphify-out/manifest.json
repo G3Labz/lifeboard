@@ -1,0 +1,1010 @@
+{
+  ".vscode/settings.json": {
+    "mtime": 1749962102.129994,
+    "seen": 1788402203.163538,
+    "ast_hash": "06501373bc7c6600b38c1b3a58558d92",
+    "semantic_hash": "06501373bc7c6600b38c1b3a58558d92"
+  },
+  "Finances/finances-fe-angular/.vscode/extensions.json": {
+    "mtime": 1785949248.9649475,
+    "seen": 1788402203.1635423,
+    "ast_hash": "d3b118b41884c371c18cbd55e392eb07",
+    "semantic_hash": "d3b118b41884c371c18cbd55e392eb07"
+  },
+  "Finances/finances-fe-angular/.vscode/launch.json": {
+    "mtime": 1785949248.9656332,
+    "seen": 1788402203.1635444,
+    "ast_hash": "c6799d2f7ae6f5d7a740d1023654bb8d",
+    "semantic_hash": "c6799d2f7ae6f5d7a740d1023654bb8d"
+  },
+  "Finances/finances-fe-angular/.vscode/tasks.json": {
+    "mtime": 1785949248.9661741,
+    "seen": 1788402203.1635451,
+    "ast_hash": "5a70b3d3763f6628c8083d7b033b98b8",
+    "semantic_hash": "5a70b3d3763f6628c8083d7b033b98b8"
+  },
+  "Finances/finances-fe-angular/angular.json": {
+    "mtime": 1788399124.115332,
+    "seen": 1788402203.163546,
+    "ast_hash": "808c5dd3a2c094ade78a16b1000325fb",
+    "semantic_hash": "808c5dd3a2c094ade78a16b1000325fb"
+  },
+  "Finances/finances-fe-angular/package.json": {
+    "mtime": 1788401424.9128506,
+    "seen": 1788402203.163557,
+    "ast_hash": "5fdaf401bda50d5fd75f446f2ad64277",
+    "semantic_hash": "5fdaf401bda50d5fd75f446f2ad64277"
+  },
+  "Finances/finances-fe-angular/src/app/app.component.spec.ts": {
+    "mtime": 1786839250.173396,
+    "seen": 1788402203.1635587,
+    "ast_hash": "dea42b27f941fafcd30654f1db3e501d",
+    "semantic_hash": "dea42b27f941fafcd30654f1db3e501d"
+  },
+  "Finances/finances-fe-angular/src/app/app.component.ts": {
+    "mtime": 1786847653.1593993,
+    "seen": 1788402203.1635594,
+    "ast_hash": "e00033a75638e51a3774cdab2ae031f8",
+    "semantic_hash": "e00033a75638e51a3774cdab2ae031f8"
+  },
+  "Finances/finances-fe-angular/src/app/app.config.spec.ts": {
+    "mtime": 1788401904.0866094,
+    "seen": 1788402203.1635602,
+    "ast_hash": "340bb20564c2c5bbd7b0031fd1f9e14e",
+    "semantic_hash": "340bb20564c2c5bbd7b0031fd1f9e14e"
+  },
+  "Finances/finances-fe-angular/src/app/app.config.ts": {
+    "mtime": 1786795803.358877,
+    "seen": 1788402203.1635609,
+    "ast_hash": "192cda1d9962d3fb673b6f05235eab8c",
+    "semantic_hash": "192cda1d9962d3fb673b6f05235eab8c"
+  },
+  "Finances/finances-fe-angular/src/app/app.routes.ts": {
+    "mtime": 1785949248.9735758,
+    "seen": 1788402203.1635618,
+    "ast_hash": "9e82134f3e41732656270447c4c872fe",
+    "semantic_hash": "9e82134f3e41732656270447c4c872fe"
+  },
+  "Finances/finances-fe-angular/src/app/components/ap-comparison-v2/ap-comparison-v2.component.spec.ts": {
+    "mtime": 1788401875.882053,
+    "seen": 1788402203.1635628,
+    "ast_hash": "066406df424d91d1b5a6a4f2f8900067",
+    "semantic_hash": "066406df424d91d1b5a6a4f2f8900067"
+  },
+  "Finances/finances-fe-angular/src/app/components/ap-comparison-v2/ap-comparison-v2.component.ts": {
+    "mtime": 1786840249.9907694,
+    "seen": 1788402203.1635635,
+    "ast_hash": "5ee70b91231a5c9f0f4d80f9c2813158",
+    "semantic_hash": "5ee70b91231a5c9f0f4d80f9c2813158"
+  },
+  "Finances/finances-fe-angular/src/app/components/ap-comparison/ap-comparison.component.spec.ts": {
+    "mtime": 1788401866.6827545,
+    "seen": 1788402203.1635642,
+    "ast_hash": "178b625f0cb0f9a317191751ce3e53ec",
+    "semantic_hash": "178b625f0cb0f9a317191751ce3e53ec"
+  },
+  "Finances/finances-fe-angular/src/app/components/ap-comparison/ap-comparison.component.ts": {
+    "mtime": 1786794726.6460927,
+    "seen": 1788402203.1635652,
+    "ast_hash": "30cdf93047708764b2b31d70c72dfb13",
+    "semantic_hash": "30cdf93047708764b2b31d70c72dfb13"
+  },
+  "Finances/finances-fe-angular/src/app/components/budget-blueprint/budget-blueprint.component.spec.ts": {
+    "mtime": 1788401827.1323667,
+    "seen": 1788402203.1635659,
+    "ast_hash": "cf060b6472e43cd4bee2679d5d9c939d",
+    "semantic_hash": "cf060b6472e43cd4bee2679d5d9c939d"
+  },
+  "Finances/finances-fe-angular/src/app/components/budget-blueprint/budget-blueprint.component.ts": {
+    "mtime": 1788400073.2789745,
+    "seen": 1788402203.1635664,
+    "ast_hash": "ae93db919a490faf7c3d7345ba45026f",
+    "semantic_hash": "ae93db919a490faf7c3d7345ba45026f"
+  },
+  "Finances/finances-fe-angular/src/app/components/cards-view/cards-view.component.spec.ts": {
+    "mtime": 1788401818.6643043,
+    "seen": 1788402203.1635673,
+    "ast_hash": "4e730ce0b30a79ff405a4e8d77615f05",
+    "semantic_hash": "4e730ce0b30a79ff405a4e8d77615f05"
+  },
+  "Finances/finances-fe-angular/src/app/components/cards-view/cards-view.component.ts": {
+    "mtime": 1786793538.5886624,
+    "seen": 1788402203.163568,
+    "ast_hash": "f45141e5bd565a00694c66624b84c63a",
+    "semantic_hash": "f45141e5bd565a00694c66624b84c63a"
+  },
+  "Finances/finances-fe-angular/src/app/components/dashboard/dashboard.component.spec.ts": {
+    "mtime": 1788401809.2924085,
+    "seen": 1788402203.1635695,
+    "ast_hash": "352cd3cf178d23b6ce385e2d38730b66",
+    "semantic_hash": "352cd3cf178d23b6ce385e2d38730b66"
+  },
+  "Finances/finances-fe-angular/src/app/components/dashboard/dashboard.component.ts": {
+    "mtime": 1786839180.0394027,
+    "seen": 1788402203.1635702,
+    "ast_hash": "6b5bf46f6043304140d14cf9eeda1620",
+    "semantic_hash": "6b5bf46f6043304140d14cf9eeda1620"
+  },
+  "Finances/finances-fe-angular/src/app/components/emancipation-inventory/emancipation-inventory.component.spec.ts": {
+    "mtime": 1788401838.3477263,
+    "seen": 1788402203.163571,
+    "ast_hash": "ef50990a04a58bd5f56b9fc0d83195b7",
+    "semantic_hash": "ef50990a04a58bd5f56b9fc0d83195b7"
+  },
+  "Finances/finances-fe-angular/src/app/components/emancipation-inventory/emancipation-inventory.component.ts": {
+    "mtime": 1786840223.7314498,
+    "seen": 1788402203.163572,
+    "ast_hash": "4008567e9524f419dc965de94b1ac695",
+    "semantic_hash": "4008567e9524f419dc965de94b1ac695"
+  },
+  "Finances/finances-fe-angular/src/app/components/hardware-setup/hardware-setup.component.spec.ts": {
+    "mtime": 1788401856.1933677,
+    "seen": 1788402203.1635728,
+    "ast_hash": "135c544681fd1757aa8effa002c37269",
+    "semantic_hash": "135c544681fd1757aa8effa002c37269"
+  },
+  "Finances/finances-fe-angular/src/app/components/hardware-setup/hardware-setup.component.ts": {
+    "mtime": 1788401957.2394633,
+    "seen": 1788402203.1635733,
+    "ast_hash": "0c05f71f33ee7387398047e91aa4888f",
+    "semantic_hash": "0c05f71f33ee7387398047e91aa4888f"
+  },
+  "Finances/finances-fe-angular/src/app/components/header/header.component.spec.ts": {
+    "mtime": 1788401801.0657911,
+    "seen": 1788402203.163574,
+    "ast_hash": "1dfb24a36d1b6ef23d511a9d2c78a6d3",
+    "semantic_hash": "1dfb24a36d1b6ef23d511a9d2c78a6d3"
+  },
+  "Finances/finances-fe-angular/src/app/components/header/header.component.ts": {
+    "mtime": 1786839172.0526419,
+    "seen": 1788402203.1635747,
+    "ast_hash": "827ec696f4535180268aa7ad998045f4",
+    "semantic_hash": "827ec696f4535180268aa7ad998045f4"
+  },
+  "Finances/finances-fe-angular/src/app/components/investments/investments.component.spec.ts": {
+    "mtime": 1788401847.5525978,
+    "seen": 1788402203.1635756,
+    "ast_hash": "4674fe19079409d62b99f1695ebce46a",
+    "semantic_hash": "4674fe19079409d62b99f1695ebce46a"
+  },
+  "Finances/finances-fe-angular/src/app/components/investments/investments.component.ts": {
+    "mtime": 1788401964.1093614,
+    "seen": 1788402203.1635764,
+    "ast_hash": "d9f92042b83a23388dbc2c33af64e865",
+    "semantic_hash": "d9f92042b83a23388dbc2c33af64e865"
+  },
+  "Finances/finances-fe-angular/src/app/components/novacoop-payroll/novacoop-payroll.component.spec.ts": {
+    "mtime": 1788402162.8376384,
+    "seen": 1788402203.1635773,
+    "ast_hash": "853378c6e507087ece9a7caaa3c96420",
+    "semantic_hash": "853378c6e507087ece9a7caaa3c96420"
+  },
+  "Finances/finances-fe-angular/src/app/components/novacoop-payroll/novacoop-payroll.component.ts": {
+    "mtime": 1786844777.1933112,
+    "seen": 1788402203.1635778,
+    "ast_hash": "6dd1d09fe168d99fe40edda2e2e78932",
+    "semantic_hash": "6dd1d09fe168d99fe40edda2e2e78932"
+  },
+  "Finances/finances-fe-angular/src/app/components/reconciliation-matrix/reconciliation-matrix.component.spec.ts": {
+    "mtime": 1788402175.5897346,
+    "seen": 1788402203.1635785,
+    "ast_hash": "cc285032c5f391e242e889e7ca85942d",
+    "semantic_hash": "cc285032c5f391e242e889e7ca85942d"
+  },
+  "Finances/finances-fe-angular/src/app/components/reconciliation-matrix/reconciliation-matrix.component.ts": {
+    "mtime": 1786839163.1522508,
+    "seen": 1788402203.1635795,
+    "ast_hash": "ff95e838cc6ee8dc20405ab8cbce6e0b",
+    "semantic_hash": "ff95e838cc6ee8dc20405ab8cbce6e0b"
+  },
+  "Finances/finances-fe-angular/src/app/components/saving-view/saving-view.component.ts": {
+    "mtime": 1788401970.904117,
+    "seen": 1788402203.1635802,
+    "ast_hash": "ebab00f6693a548f145bbe5041b7d5c8",
+    "semantic_hash": "ebab00f6693a548f145bbe5041b7d5c8"
+  },
+  "Finances/finances-fe-angular/src/app/components/transactions/transactions-toolbar.component.spec.ts": {
+    "mtime": 1788400852.6058228,
+    "seen": 1788402203.163581,
+    "ast_hash": "f545d6dcc928d70f617b1bc527095d76",
+    "semantic_hash": "f545d6dcc928d70f617b1bc527095d76"
+  },
+  "Finances/finances-fe-angular/src/app/components/transactions/transactions-toolbar.component.ts": {
+    "mtime": 1788400848.2365327,
+    "seen": 1788402203.1635816,
+    "ast_hash": "488226b52b0372294f8a1edb215f54c8",
+    "semantic_hash": "488226b52b0372294f8a1edb215f54c8"
+  },
+  "Finances/finances-fe-angular/src/app/components/transactions/transactions.component.spec.ts": {
+    "mtime": 1788401200.719488,
+    "seen": 1788402203.1635823,
+    "ast_hash": "c59e488aba8bf1c61add7e06374ba110",
+    "semantic_hash": "c59e488aba8bf1c61add7e06374ba110"
+  },
+  "Finances/finances-fe-angular/src/app/components/transactions/transactions.component.ts": {
+    "mtime": 1788400871.5346556,
+    "seen": 1788402203.163583,
+    "ast_hash": "35d8d0397d1abf208b0725d00256fb92",
+    "semantic_hash": "35d8d0397d1abf208b0725d00256fb92"
+  },
+  "Finances/finances-fe-angular/src/app/core/dto/finance.dto.ts": {
+    "mtime": 1786847437.8276565,
+    "seen": 1788402203.1635838,
+    "ast_hash": "fa95bccfac497b3479b67fc15adbb039",
+    "semantic_hash": "fa95bccfac497b3479b67fc15adbb039"
+  },
+  "Finances/finances-fe-angular/src/app/core/fixtures/apartment-links.fixture.spec.ts": {
+    "mtime": 1788400590.572266,
+    "seen": 1788402203.1635845,
+    "ast_hash": "1a16235d1d30d92443aea0bba41393eb",
+    "semantic_hash": "1a16235d1d30d92443aea0bba41393eb"
+  },
+  "Finances/finances-fe-angular/src/app/core/fixtures/apartment-links.fixture.ts": {
+    "mtime": 1788400586.876469,
+    "seen": 1788402203.1635852,
+    "ast_hash": "ff3733f731ed5d75e5deb511b1622144",
+    "semantic_hash": "ff3733f731ed5d75e5deb511b1622144"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/emancipation.helper.spec.ts": {
+    "mtime": 1788400288.8933034,
+    "seen": 1788402203.1635861,
+    "ast_hash": "27ca03e46d866a6815ea67e125c85f42",
+    "semantic_hash": "27ca03e46d866a6815ea67e125c85f42"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/emancipation.helper.ts": {
+    "mtime": 1788400283.109627,
+    "seen": 1788402203.1635869,
+    "ast_hash": "950f14f5adf8f2120222651426e260e7",
+    "semantic_hash": "950f14f5adf8f2120222651426e260e7"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/financial-metrics.helper.spec.ts": {
+    "mtime": 1788400058.7465117,
+    "seen": 1788402203.1635883,
+    "ast_hash": "c1d5e9b580f93de49ded0586b90feb61",
+    "semantic_hash": "c1d5e9b580f93de49ded0586b90feb61"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/financial-metrics.helper.ts": {
+    "mtime": 1788400054.1146345,
+    "seen": 1788402203.1635892,
+    "ast_hash": "89e82998cadf19be3927a0af84c07091",
+    "semantic_hash": "89e82998cadf19be3927a0af84c07091"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/hardware-setup.helper.spec.ts": {
+    "mtime": 1788400317.2288127,
+    "seen": 1788402203.1635902,
+    "ast_hash": "1387d7fd7c273ebfba21749fcecffca1",
+    "semantic_hash": "1387d7fd7c273ebfba21749fcecffca1"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/hardware-setup.helper.ts": {
+    "mtime": 1788400311.6912494,
+    "seen": 1788402203.1635907,
+    "ast_hash": "481b746138121fb0e1577ea22d4db66b",
+    "semantic_hash": "481b746138121fb0e1577ea22d4db66b"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/investment.helper.spec.ts": {
+    "mtime": 1788400439.7231915,
+    "seen": 1788402203.1635914,
+    "ast_hash": "87ca47ce7cd878fd0f8fa0f67fdf801f",
+    "semantic_hash": "87ca47ce7cd878fd0f8fa0f67fdf801f"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/investment.helper.ts": {
+    "mtime": 1788400300.2358356,
+    "seen": 1788402203.163592,
+    "ast_hash": "516d177991bbaf86a7f2ad2a688a6c64",
+    "semantic_hash": "516d177991bbaf86a7f2ad2a688a6c64"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/novacoop-fiscal.helper.spec.ts": {
+    "mtime": 1788400270.9652197,
+    "seen": 1788402203.1635928,
+    "ast_hash": "5bc784f11848a8894360038cfd5f2dda",
+    "semantic_hash": "5bc784f11848a8894360038cfd5f2dda"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/novacoop-fiscal.helper.ts": {
+    "mtime": 1788400339.3908958,
+    "seen": 1788402203.1635935,
+    "ast_hash": "a8b208bc48f2a048bc5d53eb47064619",
+    "semantic_hash": "a8b208bc48f2a048bc5d53eb47064619"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/transaction-sort.helper.spec.ts": {
+    "mtime": 1788400909.6280367,
+    "seen": 1788402203.1635942,
+    "ast_hash": "39b20d98e31e70a326dba1c8148ae6dd",
+    "semantic_hash": "39b20d98e31e70a326dba1c8148ae6dd"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/transaction-sort.helper.ts": {
+    "mtime": 1788400835.2307844,
+    "seen": 1788402203.163595,
+    "ast_hash": "18a6827fe5abae825a6c564f122a3d9b",
+    "semantic_hash": "18a6827fe5abae825a6c564f122a3d9b"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/transaction.helper.spec.ts": {
+    "mtime": 1786839216.3237436,
+    "seen": 1788402203.1635957,
+    "ast_hash": "52de1c10c60d78c6fd2283ab0f481262",
+    "semantic_hash": "52de1c10c60d78c6fd2283ab0f481262"
+  },
+  "Finances/finances-fe-angular/src/app/core/helpers/transaction.helper.ts": {
+    "mtime": 1786839115.9213667,
+    "seen": 1788402203.1635966,
+    "ast_hash": "27a6172e2ddd5e9ef2afc61339091d00",
+    "semantic_hash": "27a6172e2ddd5e9ef2afc61339091d00"
+  },
+  "Finances/finances-fe-angular/src/app/core/mappers/apartment.mapper.ts": {
+    "mtime": 1788399923.0102684,
+    "seen": 1788402203.163597,
+    "ast_hash": "f2940221488526e268c53d2596bf1994",
+    "semantic_hash": "f2940221488526e268c53d2596bf1994"
+  },
+  "Finances/finances-fe-angular/src/app/core/mappers/budget.mapper.ts": {
+    "mtime": 1788399923.0079024,
+    "seen": 1788402203.1635978,
+    "ast_hash": "79f4a7258d1eab20d3f75d879762c065",
+    "semantic_hash": "79f4a7258d1eab20d3f75d879762c065"
+  },
+  "Finances/finances-fe-angular/src/app/core/mappers/definition.mapper.ts": {
+    "mtime": 1788399923.0072322,
+    "seen": 1788402203.1635985,
+    "ast_hash": "10bac6c7c4a40d7d3bd79747d2722a26",
+    "semantic_hash": "10bac6c7c4a40d7d3bd79747d2722a26"
+  },
+  "Finances/finances-fe-angular/src/app/core/mappers/emancipation.mapper.ts": {
+    "mtime": 1788399923.0116923,
+    "seen": 1788402203.1635993,
+    "ast_hash": "2b44c8d1ec2f80f84b7eabc9a1e78e6a",
+    "semantic_hash": "2b44c8d1ec2f80f84b7eabc9a1e78e6a"
+  },
+  "Finances/finances-fe-angular/src/app/core/mappers/finance.mapper.spec.ts": {
+    "mtime": 1786841047.2672608,
+    "seen": 1788402203.1636007,
+    "ast_hash": "caf32ee710783663e9f670282a01ccd6",
+    "semantic_hash": "caf32ee710783663e9f670282a01ccd6"
+  },
+  "Finances/finances-fe-angular/src/app/core/mappers/finance.mapper.ts": {
+    "mtime": 1788399923.0126367,
+    "seen": 1788402203.1636014,
+    "ast_hash": "9633ba7f6fb112ac7152ef4c1a080c78",
+    "semantic_hash": "9633ba7f6fb112ac7152ef4c1a080c78"
+  },
+  "Finances/finances-fe-angular/src/app/core/mappers/hardware.mapper.ts": {
+    "mtime": 1788399923.012281,
+    "seen": 1788402203.1636019,
+    "ast_hash": "ad5bf7ecdbf3e7c688e16529672c2c93",
+    "semantic_hash": "ad5bf7ecdbf3e7c688e16529672c2c93"
+  },
+  "Finances/finances-fe-angular/src/app/core/mappers/investment.mapper.ts": {
+    "mtime": 1788399923.0119886,
+    "seen": 1788402203.1636026,
+    "ast_hash": "018771a5ca72ea7d8f088dc73a3982ab",
+    "semantic_hash": "018771a5ca72ea7d8f088dc73a3982ab"
+  },
+  "Finances/finances-fe-angular/src/app/core/mappers/novacoop.mapper.ts": {
+    "mtime": 1788399941.8944077,
+    "seen": 1788402203.1636038,
+    "ast_hash": "32deb29dea10eff9ccd9395afb20077d",
+    "semantic_hash": "32deb29dea10eff9ccd9395afb20077d"
+  },
+  "Finances/finances-fe-angular/src/app/core/mappers/transaction.mapper.ts": {
+    "mtime": 1788399923.0076058,
+    "seen": 1788402203.1636047,
+    "ast_hash": "4d16014fba20e3d5d2dbb63944e85dc0",
+    "semantic_hash": "4d16014fba20e3d5d2dbb63944e85dc0"
+  },
+  "Finances/finances-fe-angular/src/app/core/ports/finance-repository.port.ts": {
+    "mtime": 1786847484.0040777,
+    "seen": 1788402203.1636052,
+    "ast_hash": "513303bb60d0d7a32c5e6b93ab6f8e94",
+    "semantic_hash": "513303bb60d0d7a32c5e6b93ab6f8e94"
+  },
+  "Finances/finances-fe-angular/src/app/core/ports/storage.port.ts": {
+    "mtime": 1788400774.5973485,
+    "seen": 1788402203.163606,
+    "ast_hash": "0b34c81cf441ebaf624562b51109957b",
+    "semantic_hash": "0b34c81cf441ebaf624562b51109957b"
+  },
+  "Finances/finances-fe-angular/src/app/infrastructure/providers/local-storage.provider.spec.ts": {
+    "mtime": 1788400750.1791792,
+    "seen": 1788402203.163607,
+    "ast_hash": "2457620ba0e4bf99fdad88fead74be1f",
+    "semantic_hash": "2457620ba0e4bf99fdad88fead74be1f"
+  },
+  "Finances/finances-fe-angular/src/app/infrastructure/providers/local-storage.provider.ts": {
+    "mtime": 1788400744.0739632,
+    "seen": 1788402203.1636076,
+    "ast_hash": "4a9ce7f1107ce5b9dee9f5bc3e5cada7",
+    "semantic_hash": "4a9ce7f1107ce5b9dee9f5bc3e5cada7"
+  },
+  "Finances/finances-fe-angular/src/app/infrastructure/repositories/generic-local-store.spec.ts": {
+    "mtime": 1788401011.7013278,
+    "seen": 1788402203.1636083,
+    "ast_hash": "092ff57c8a1d2667a95dd03e9fe043b1",
+    "semantic_hash": "092ff57c8a1d2667a95dd03e9fe043b1"
+  },
+  "Finances/finances-fe-angular/src/app/infrastructure/repositories/generic-local-store.ts": {
+    "mtime": 1788401005.4021442,
+    "seen": 1788402203.163609,
+    "ast_hash": "f56444817aa8ccaa7e90874870279f78",
+    "semantic_hash": "f56444817aa8ccaa7e90874870279f78"
+  },
+  "Finances/finances-fe-angular/src/app/infrastructure/repositories/local-finance.repository.ts": {
+    "mtime": 1788401127.8953156,
+    "seen": 1788402203.1636097,
+    "ast_hash": "43e4980f747ab9835e43e2a6c2ed68ea",
+    "semantic_hash": "43e4980f747ab9835e43e2a6c2ed68ea"
+  },
+  "Finances/finances-fe-angular/src/app/models/finance.model.ts": {
+    "mtime": 1786847644.9497943,
+    "seen": 1788402203.1636107,
+    "ast_hash": "3eaf631ceeb3e24dd3ac006157dcc6b7",
+    "semantic_hash": "3eaf631ceeb3e24dd3ac006157dcc6b7"
+  },
+  "Finances/finances-fe-angular/src/app/services/finance.service.spec.ts": {
+    "mtime": 1786847673.3010085,
+    "seen": 1788402203.1636112,
+    "ast_hash": "16c21e306c75ecbfab75da3b6f1a1850",
+    "semantic_hash": "16c21e306c75ecbfab75da3b6f1a1850"
+  },
+  "Finances/finances-fe-angular/src/app/services/finance.service.ts": {
+    "mtime": 1788400414.525494,
+    "seen": 1788402203.163612,
+    "ast_hash": "f7d35c68811b1ad302aebd24abd9d53f",
+    "semantic_hash": "f7d35c68811b1ad302aebd24abd9d53f"
+  },
+  "Finances/finances-fe-angular/src/main.ts": {
+    "mtime": 1785949248.9670916,
+    "seen": 1788402203.1636126,
+    "ast_hash": "c986c915181c0d91d6ea1af9fc003131",
+    "semantic_hash": "c986c915181c0d91d6ea1af9fc003131"
+  },
+  "Finances/finances-fe-angular/tsconfig.app.json": {
+    "mtime": 1785949248.9636905,
+    "seen": 1788402203.163613,
+    "ast_hash": "116676e563336466ec75530abfc45c6e",
+    "semantic_hash": "116676e563336466ec75530abfc45c6e"
+  },
+  "Finances/finances-fe-angular/tsconfig.json": {
+    "mtime": 1785949248.9621472,
+    "seen": 1788402203.163614,
+    "ast_hash": "8f0a801a3ff2da443ca2e06293278535",
+    "semantic_hash": "8f0a801a3ff2da443ca2e06293278535"
+  },
+  "Finances/finances-fe-angular/tsconfig.spec.json": {
+    "mtime": 1785949248.964399,
+    "seen": 1788402203.163615,
+    "ast_hash": "92e39b35db8f03ccae823e77a9a21e71",
+    "semantic_hash": "92e39b35db8f03ccae823e77a9a21e71"
+  },
+  "Finances/finances-legacy/src/Providers/Storage/localStorage.js": {
+    "mtime": 1749962102.3951995,
+    "seen": 1788402203.1636157,
+    "ast_hash": "fb2ef41e9faaf2b447a1c2ac53912b90",
+    "semantic_hash": "fb2ef41e9faaf2b447a1c2ac53912b90"
+  },
+  "Finances/finances-legacy/src/Services/localDB.js": {
+    "mtime": 1785949020.9224548,
+    "seen": 1788402203.1636164,
+    "ast_hash": "852574b1975870d346311192e6481eca",
+    "semantic_hash": "852574b1975870d346311192e6481eca"
+  },
+  "Finances/finances-legacy/src/app/components/footer/footer.js": {
+    "mtime": 1749962102.4257038,
+    "seen": 1788402203.1636171,
+    "ast_hash": "59b835ff49e14b6947998e07fef3ac4a",
+    "semantic_hash": "59b835ff49e14b6947998e07fef3ac4a"
+  },
+  "Finances/finances-legacy/src/app/index.js": {
+    "mtime": 1785949023.7731376,
+    "seen": 1788402203.1636178,
+    "ast_hash": "df89637e6906aea373b91e7da112107e",
+    "semantic_hash": "df89637e6906aea373b91e7da112107e"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Controllers/OrganizationsController.cs": {
+    "mtime": 1785949332.6753669,
+    "seen": 1788402203.1636186,
+    "ast_hash": "b957f67a8801df0aaa48b9aaa699e122",
+    "semantic_hash": "b957f67a8801df0aaa48b9aaa699e122"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Controllers/ProjectsController.cs": {
+    "mtime": 1785949335.0688846,
+    "seen": 1788402203.1636193,
+    "ast_hash": "4cc2d7989dc2faab249a3245d0ba1654",
+    "semantic_hash": "4cc2d7989dc2faab249a3245d0ba1654"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Controllers/TasksController.cs": {
+    "mtime": 1785949337.3888483,
+    "seen": 1788402203.16362,
+    "ast_hash": "79d2f3796ab7ff80638085fc78d74ac7",
+    "semantic_hash": "79d2f3796ab7ff80638085fc78d74ac7"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Data/DbConnectionFactory.cs": {
+    "mtime": 1785949733.5031986,
+    "seen": 1788402203.1636217,
+    "ast_hash": "8b9f13c9b0c0bdae64aa1a77caf731bc",
+    "semantic_hash": "8b9f13c9b0c0bdae64aa1a77caf731bc"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Data/DbInitializer.cs": {
+    "mtime": 1785949985.3732457,
+    "seen": 1788402203.1636224,
+    "ast_hash": "b0717aba3e508c3b83b5c679f5d7f3d4",
+    "semantic_hash": "b0717aba3e508c3b83b5c679f5d7f3d4"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Data/GuidTypeHandler.cs": {
+    "mtime": 1785949982.160955,
+    "seen": 1788402203.163623,
+    "ast_hash": "bb67a74439838b0b47a215ae72ee0b85",
+    "semantic_hash": "bb67a74439838b0b47a215ae72ee0b85"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Models/BaseEntity.cs": {
+    "mtime": 1785949310.5704665,
+    "seen": 1788402203.163624,
+    "ast_hash": "8afc2b650c8270f961f623847bd25c45",
+    "semantic_hash": "8afc2b650c8270f961f623847bd25c45"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Models/Organization.cs": {
+    "mtime": 1785949313.018638,
+    "seen": 1788402203.1636245,
+    "ast_hash": "03c6bd6e6ad19b291a30aa1fce85f74b",
+    "semantic_hash": "03c6bd6e6ad19b291a30aa1fce85f74b"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Models/Project.cs": {
+    "mtime": 1785949317.730822,
+    "seen": 1788402203.1636252,
+    "ast_hash": "5b381ea42c42399e37a0f1f939c5c355",
+    "semantic_hash": "5b381ea42c42399e37a0f1f939c5c355"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Models/TaskItem.cs": {
+    "mtime": 1785949319.9130032,
+    "seen": 1788402203.163626,
+    "ast_hash": "bacd5fedd87f517d5acf173663af897c",
+    "semantic_hash": "bacd5fedd87f517d5acf173663af897c"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Program.cs": {
+    "mtime": 1785949765.088585,
+    "seen": 1788402203.1636267,
+    "ast_hash": "d27e1625ee19dab39e276fdbd2f7588e",
+    "semantic_hash": "d27e1625ee19dab39e276fdbd2f7588e"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Properties/launchSettings.json": {
+    "mtime": 1785949267.3348372,
+    "seen": 1788402203.1636276,
+    "ast_hash": "9ffc4307bb425854b32d38812a3d109a",
+    "semantic_hash": "9ffc4307bb425854b32d38812a3d109a"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Repositories/OrganizationDapperRepository.cs": {
+    "mtime": 1785949739.682152,
+    "seen": 1788402203.163628,
+    "ast_hash": "4a9edc363bf8251eae606a821770c2ab",
+    "semantic_hash": "4a9edc363bf8251eae606a821770c2ab"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Repositories/ProjectDapperRepository.cs": {
+    "mtime": 1785949742.720774,
+    "seen": 1788402203.1636288,
+    "ast_hash": "31d859a82b39219e430d2db909bacdfa",
+    "semantic_hash": "31d859a82b39219e430d2db909bacdfa"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Repositories/TaskDapperRepository.cs": {
+    "mtime": 1785949746.5879097,
+    "seen": 1788402203.1636295,
+    "ast_hash": "01ebab49367f93ec92ef8d4ec012ba9a",
+    "semantic_hash": "01ebab49367f93ec92ef8d4ec012ba9a"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Services/OrganizationService.cs": {
+    "mtime": 1785949750.8256426,
+    "seen": 1788402203.16363,
+    "ast_hash": "46ef7523b51494c8a89d29e720c57ca8",
+    "semantic_hash": "46ef7523b51494c8a89d29e720c57ca8"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Services/ProjectService.cs": {
+    "mtime": 1785949753.6819804,
+    "seen": 1788402203.163631,
+    "ast_hash": "47e7003d100dce623aab5c1cda8973b3",
+    "semantic_hash": "47e7003d100dce623aab5c1cda8973b3"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/Services/TaskService.cs": {
+    "mtime": 1785949756.922569,
+    "seen": 1788402203.1636317,
+    "ast_hash": "391ca40979d1b79b4043a22de5b5a896",
+    "semantic_hash": "391ca40979d1b79b4043a22de5b5a896"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/appsettings.json": {
+    "mtime": 1785949267.2402315,
+    "seen": 1788402203.1636324,
+    "ast_hash": "f7e65dde4e5533740a0d57ac9355c0e8",
+    "semantic_hash": "f7e65dde4e5533740a0d57ac9355c0e8"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Application/gtodo-be-net.csproj": {
+    "mtime": 1786507563.2396214,
+    "seen": 1788402203.1636329,
+    "ast_hash": "eef4ebf9daa665f15295e2cb2be3a37a",
+    "semantic_hash": "eef4ebf9daa665f15295e2cb2be3a37a"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Tests/DapperRepositoryIntegrationTests.cs": {
+    "mtime": 1785949962.548921,
+    "seen": 1788402203.1636336,
+    "ast_hash": "fa591d77f86e2f9c2ca377388e318ece",
+    "semantic_hash": "fa591d77f86e2f9c2ca377388e318ece"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Tests/OrganizationServiceTests.cs": {
+    "mtime": 1785949922.427213,
+    "seen": 1788402203.1636345,
+    "ast_hash": "3bc3e1132ec2bed8cd060bd24a663f83",
+    "semantic_hash": "3bc3e1132ec2bed8cd060bd24a663f83"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Tests/ProjectServiceTests.cs": {
+    "mtime": 1785949926.1511853,
+    "seen": 1788402203.1636353,
+    "ast_hash": "b59b148070262bebc3b1466be7ac47f0",
+    "semantic_hash": "b59b148070262bebc3b1466be7ac47f0"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Tests/TaskServiceTests.cs": {
+    "mtime": 1785949929.5356603,
+    "seen": 1788402203.163636,
+    "ast_hash": "f9621eea73018ae46bd7f455ad940b7a",
+    "semantic_hash": "f9621eea73018ae46bd7f455ad940b7a"
+  },
+  "glorified-todo/gtodo-be-net/gtodo-be-net.Tests/gtodo-be-net.Tests.csproj": {
+    "mtime": 1785949913.9732203,
+    "seen": 1788402203.1636367,
+    "ast_hash": "06aadb30547fda65bac9cd3122c3e99b",
+    "semantic_hash": "06aadb30547fda65bac9cd3122c3e99b"
+  },
+  "glorified-todo/gtodo-fe-angular/.vscode/extensions.json": {
+    "mtime": 1786309055.0639222,
+    "seen": 1788402203.1636372,
+    "ast_hash": "d3b118b41884c371c18cbd55e392eb07",
+    "semantic_hash": "d3b118b41884c371c18cbd55e392eb07"
+  },
+  "glorified-todo/gtodo-fe-angular/.vscode/launch.json": {
+    "mtime": 1786309055.0653555,
+    "seen": 1788402203.163638,
+    "ast_hash": "c6799d2f7ae6f5d7a740d1023654bb8d",
+    "semantic_hash": "c6799d2f7ae6f5d7a740d1023654bb8d"
+  },
+  "glorified-todo/gtodo-fe-angular/.vscode/tasks.json": {
+    "mtime": 1786309055.068159,
+    "seen": 1788402203.1636388,
+    "ast_hash": "903821282d5c5b46a4673a263eeb9dee",
+    "semantic_hash": "903821282d5c5b46a4673a263eeb9dee"
+  },
+  "glorified-todo/gtodo-fe-angular/angular.json": {
+    "mtime": 1788400153.8632028,
+    "seen": 1788402203.1636395,
+    "ast_hash": "01639ddfd91c589ddf5b50894c61193e",
+    "semantic_hash": "01639ddfd91c589ddf5b50894c61193e"
+  },
+  "glorified-todo/gtodo-fe-angular/package.json": {
+    "mtime": 1788401442.6242604,
+    "seen": 1788402203.1636403,
+    "ast_hash": "6cc79de54a31ca7f6cc40782a9201118",
+    "semantic_hash": "6cc79de54a31ca7f6cc40782a9201118"
+  },
+  "glorified-todo/gtodo-fe-angular/src/app/app.config.ts": {
+    "mtime": 1786309055.079755,
+    "seen": 1788402203.163641,
+    "ast_hash": "503106af1b0a3d86a168fead0b15f434",
+    "semantic_hash": "503106af1b0a3d86a168fead0b15f434"
+  },
+  "glorified-todo/gtodo-fe-angular/src/app/app.spec.ts": {
+    "mtime": 1788400184.251004,
+    "seen": 1788402203.1636417,
+    "ast_hash": "77577496542e45a86c9df8e342213d87",
+    "semantic_hash": "77577496542e45a86c9df8e342213d87"
+  },
+  "glorified-todo/gtodo-fe-angular/src/app/app.ts": {
+    "mtime": 1788400126.2112007,
+    "seen": 1788402203.1636424,
+    "ast_hash": "99295140ffa0f8ce526b04b2839410aa",
+    "semantic_hash": "99295140ffa0f8ce526b04b2839410aa"
+  },
+  "glorified-todo/gtodo-fe-angular/src/app/models/task.model.ts": {
+    "mtime": 1786309088.3337963,
+    "seen": 1788402203.1636431,
+    "ast_hash": "d514b56a261420afa4c03e609f8c343c",
+    "semantic_hash": "d514b56a261420afa4c03e609f8c343c"
+  },
+  "glorified-todo/gtodo-fe-angular/src/app/services/task.service.ts": {
+    "mtime": 1786309140.2464516,
+    "seen": 1788402203.1636436,
+    "ast_hash": "286bfcbfae2b8896a2f3e7510170abf0",
+    "semantic_hash": "286bfcbfae2b8896a2f3e7510170abf0"
+  },
+  "glorified-todo/gtodo-fe-angular/src/main.ts": {
+    "mtime": 1786309055.0693,
+    "seen": 1788402203.1636443,
+    "ast_hash": "ac0b277dca1867b341af9e2d25224ae9",
+    "semantic_hash": "ac0b277dca1867b341af9e2d25224ae9"
+  },
+  "glorified-todo/gtodo-fe-angular/tsconfig.app.json": {
+    "mtime": 1786309055.0616932,
+    "seen": 1788402203.1636453,
+    "ast_hash": "67a3f20f3c9369570c8dc70e3d5bb7ce",
+    "semantic_hash": "67a3f20f3c9369570c8dc70e3d5bb7ce"
+  },
+  "glorified-todo/gtodo-fe-angular/tsconfig.json": {
+    "mtime": 1786309055.0602765,
+    "seen": 1788402203.163646,
+    "ast_hash": "d4886a8a9be1c35a2d17ab5e0f4439c2",
+    "semantic_hash": "d4886a8a9be1c35a2d17ab5e0f4439c2"
+  },
+  "glorified-todo/gtodo-fe-angular/tsconfig.spec.json": {
+    "mtime": 1786309055.062882,
+    "seen": 1788402203.1636467,
+    "ast_hash": "9261a8f9db3b2c991df0e6f9d51828b1",
+    "semantic_hash": "9261a8f9db3b2c991df0e6f9d51828b1"
+  },
+  "housesheet/housesheet-fe-angular/.vscode/extensions.json": {
+    "mtime": 1785949387.3027918,
+    "seen": 1788402203.1636474,
+    "ast_hash": "d3b118b41884c371c18cbd55e392eb07",
+    "semantic_hash": "d3b118b41884c371c18cbd55e392eb07"
+  },
+  "housesheet/housesheet-fe-angular/.vscode/launch.json": {
+    "mtime": 1785949387.3040369,
+    "seen": 1788402203.1636484,
+    "ast_hash": "c6799d2f7ae6f5d7a740d1023654bb8d",
+    "semantic_hash": "c6799d2f7ae6f5d7a740d1023654bb8d"
+  },
+  "housesheet/housesheet-fe-angular/.vscode/tasks.json": {
+    "mtime": 1785949387.3054485,
+    "seen": 1788402203.163649,
+    "ast_hash": "5a70b3d3763f6628c8083d7b033b98b8",
+    "semantic_hash": "5a70b3d3763f6628c8083d7b033b98b8"
+  },
+  "housesheet/housesheet-fe-angular/angular.json": {
+    "mtime": 1788400971.1802301,
+    "seen": 1788402203.1636496,
+    "ast_hash": "65a6fd7dd28475fbd0390682153ffc1a",
+    "semantic_hash": "65a6fd7dd28475fbd0390682153ffc1a"
+  },
+  "housesheet/housesheet-fe-angular/package.json": {
+    "mtime": 1786507551.6414962,
+    "seen": 1788402203.1636503,
+    "ast_hash": "d41484169e17d0b1ea9f9571d94e5831",
+    "semantic_hash": "d41484169e17d0b1ea9f9571d94e5831"
+  },
+  "housesheet/housesheet-fe-angular/src/app/app.component.spec.ts": {
+    "mtime": 1785950010.619739,
+    "seen": 1788402203.163651,
+    "ast_hash": "b0c45a98e36ab8c0d5f9cfa50d520d7f",
+    "semantic_hash": "b0c45a98e36ab8c0d5f9cfa50d520d7f"
+  },
+  "housesheet/housesheet-fe-angular/src/app/app.component.ts": {
+    "mtime": 1788401625.5499372,
+    "seen": 1788402203.1636515,
+    "ast_hash": "205c4fb26cb8bde4043400a4936ad45d",
+    "semantic_hash": "205c4fb26cb8bde4043400a4936ad45d"
+  },
+  "housesheet/housesheet-fe-angular/src/app/app.config.ts": {
+    "mtime": 1785949387.3183389,
+    "seen": 1788402203.1636524,
+    "ast_hash": "a93506ace2360facd76431e5785035ab",
+    "semantic_hash": "a93506ace2360facd76431e5785035ab"
+  },
+  "housesheet/housesheet-fe-angular/src/app/app.routes.ts": {
+    "mtime": 1785949387.3196325,
+    "seen": 1788402203.1636531,
+    "ast_hash": "9e82134f3e41732656270447c4c872fe",
+    "semantic_hash": "9e82134f3e41732656270447c4c872fe"
+  },
+  "housesheet/housesheet-fe-angular/src/main.ts": {
+    "mtime": 1785949387.306707,
+    "seen": 1788402203.1636539,
+    "ast_hash": "c986c915181c0d91d6ea1af9fc003131",
+    "semantic_hash": "c986c915181c0d91d6ea1af9fc003131"
+  },
+  "housesheet/housesheet-fe-angular/tsconfig.app.json": {
+    "mtime": 1785949387.299684,
+    "seen": 1788402203.1636546,
+    "ast_hash": "116676e563336466ec75530abfc45c6e",
+    "semantic_hash": "116676e563336466ec75530abfc45c6e"
+  },
+  "housesheet/housesheet-fe-angular/tsconfig.json": {
+    "mtime": 1785949387.2983513,
+    "seen": 1788402203.1636555,
+    "ast_hash": "8f0a801a3ff2da443ca2e06293278535",
+    "semantic_hash": "8f0a801a3ff2da443ca2e06293278535"
+  },
+  "housesheet/housesheet-fe-angular/tsconfig.spec.json": {
+    "mtime": 1785949387.3013275,
+    "seen": 1788402203.1636562,
+    "ast_hash": "92e39b35db8f03ccae823e77a9a21e71",
+    "semantic_hash": "92e39b35db8f03ccae823e77a9a21e71"
+  },
+  "housesheet/housesheet-legacy/js/housesheet.js": {
+    "mtime": 1785949189.094614,
+    "seen": 1788402203.163657,
+    "ast_hash": "1b62c0c67ef0c30cda2b5594e9322b54",
+    "semantic_hash": "1b62c0c67ef0c30cda2b5594e9322b54"
+  },
+  "lifeboard-legacy/cabecalho.php": {
+    "mtime": 1785949465.3881917,
+    "seen": 1788402203.1636577,
+    "ast_hash": "9e5b415387d121b516a40afa279225a6",
+    "semantic_hash": "9e5b415387d121b516a40afa279225a6"
+  },
+  "lifeboard-legacy/conecta.php": {
+    "mtime": 1749962102.1354952,
+    "seen": 1788402203.1636584,
+    "ast_hash": "929efbdd44066f31766bd821658bd18a",
+    "semantic_hash": "929efbdd44066f31766bd821658bd18a"
+  },
+  "lifeboard-legacy/db_access/banco-categoria.php": {
+    "mtime": 1749962102.2220242,
+    "seen": 1788402203.1636593,
+    "ast_hash": "9db0bea78bd2397c40dbd19e4a0d9adc",
+    "semantic_hash": "9db0bea78bd2397c40dbd19e4a0d9adc"
+  },
+  "lifeboard-legacy/db_access/banco-produto.php": {
+    "mtime": 1749962102.225023,
+    "seen": 1788402203.16366,
+    "ast_hash": "cf26e2a3253f7628fe2a69ab66fff987",
+    "semantic_hash": "cf26e2a3253f7628fe2a69ab66fff987"
+  },
+  "lifeboard-legacy/db_access/banco-usuario.php": {
+    "mtime": 1749962102.228523,
+    "seen": 1788402203.1636608,
+    "ast_hash": "a3dd78f2f9e2fcf24e13a66e5e6b8bfd",
+    "semantic_hash": "a3dd78f2f9e2fcf24e13a66e5e6b8bfd"
+  },
+  "lifeboard-legacy/db_access/conecta.php": {
+    "mtime": 1749962102.2315233,
+    "seen": 1788402203.1636612,
+    "ast_hash": "b3a3e6ea1e64269f8304ddcb47c54e71",
+    "semantic_hash": "b3a3e6ea1e64269f8304ddcb47c54e71"
+  },
+  "lifeboard-legacy/footer.php": {
+    "mtime": 1749962102.2585323,
+    "seen": 1788402203.1636622,
+    "ast_hash": "11fd312f9ddf81dc3887dfb067a4983a",
+    "semantic_hash": "11fd312f9ddf81dc3887dfb067a4983a"
+  },
+  "lifeboard-legacy/index.php": {
+    "mtime": 1785949462.8228796,
+    "seen": 1788402203.163663,
+    "ast_hash": "e15816a6b589b1d7c4dace23b6cbe609",
+    "semantic_hash": "e15816a6b589b1d7c4dace23b6cbe609"
+  },
+  "lifeboard-legacy/js/bootstrap.bundle.js": {
+    "mtime": 1749962102.2710364,
+    "seen": 1788402203.1636634,
+    "ast_hash": "ea09df7efed9959f3e2c24ee8853745e",
+    "semantic_hash": "ea09df7efed9959f3e2c24ee8853745e"
+  },
+  "lifeboard-legacy/js/bootstrap.bundle.min.js": {
+    "mtime": 1749962102.2825482,
+    "seen": 1788402203.163664,
+    "ast_hash": "62e633210885066c625c46081cc2b339",
+    "semantic_hash": "62e633210885066c625c46081cc2b339"
+  },
+  "lifeboard-legacy/js/bootstrap.js": {
+    "mtime": 1749962102.2931604,
+    "seen": 1788402203.1636646,
+    "ast_hash": "d9f096d1f708c35fdd9c78bd422883cc",
+    "semantic_hash": "d9f096d1f708c35fdd9c78bd422883cc"
+  },
+  "lifeboard-legacy/js/bootstrap.min.js": {
+    "mtime": 1749962102.3026617,
+    "seen": 1788402203.1636653,
+    "ast_hash": "ce6e785579ae4cb555c9de311d1b9271",
+    "semantic_hash": "ce6e785579ae4cb555c9de311d1b9271"
+  },
+  "lifeboard-legacy/js/npm.js": {
+    "mtime": 1749962102.3131676,
+    "seen": 1788402203.1636662,
+    "ast_hash": "ccb7f3909e30b1eb8f65a24393c6e12b",
+    "semantic_hash": "ccb7f3909e30b1eb8f65a24393c6e12b"
+  },
+  "lifeboard-legacy/js/popper.min.js": {
+    "mtime": 1749962102.3171673,
+    "seen": 1788402203.163667,
+    "ast_hash": "c1d29c9b4fa7a8ee8417a01bc9ac1b56",
+    "semantic_hash": "c1d29c9b4fa7a8ee8417a01bc9ac1b56"
+  },
+  "lifeboard-legacy/js/relogio.js": {
+    "mtime": 1749962102.3211656,
+    "seen": 1788402203.1636677,
+    "ast_hash": "a0555b53e8c996c40d06e5d47ae756a7",
+    "semantic_hash": "a0555b53e8c996c40d06e5d47ae756a7"
+  },
+  "lifeboard-legacy/js/slider.js": {
+    "mtime": 1749962102.3251657,
+    "seen": 1788402203.1636684,
+    "ast_hash": "b0d189ddcc8e3718c1e263e2e5fe235c",
+    "semantic_hash": "b0d189ddcc8e3718c1e263e2e5fe235c"
+  },
+  "lifeboard-legacy/rodape.php": {
+    "mtime": 1749962102.3281658,
+    "seen": 1788402203.1636693,
+    "ast_hash": "b3b11be4ea0e57198a4c4f8fe8e1f526",
+    "semantic_hash": "b3b11be4ea0e57198a4c4f8fe8e1f526"
+  },
+  "storeroom/storeroom-fe-angular/.vscode/extensions.json": {
+    "mtime": 1785949372.0750144,
+    "seen": 1788402203.1636698,
+    "ast_hash": "d3b118b41884c371c18cbd55e392eb07",
+    "semantic_hash": "d3b118b41884c371c18cbd55e392eb07"
+  },
+  "storeroom/storeroom-fe-angular/.vscode/launch.json": {
+    "mtime": 1785949372.0755363,
+    "seen": 1788402203.1636705,
+    "ast_hash": "c6799d2f7ae6f5d7a740d1023654bb8d",
+    "semantic_hash": "c6799d2f7ae6f5d7a740d1023654bb8d"
+  },
+  "storeroom/storeroom-fe-angular/.vscode/tasks.json": {
+    "mtime": 1785949372.0760765,
+    "seen": 1788402203.1636713,
+    "ast_hash": "5a70b3d3763f6628c8083d7b033b98b8",
+    "semantic_hash": "5a70b3d3763f6628c8083d7b033b98b8"
+  },
+  "storeroom/storeroom-fe-angular/angular.json": {
+    "mtime": 1785949372.0718162,
+    "seen": 1788402203.163672,
+    "ast_hash": "571ee67cf1578cc2526d816d32a88c48",
+    "semantic_hash": "571ee67cf1578cc2526d816d32a88c48"
+  },
+  "storeroom/storeroom-fe-angular/package.json": {
+    "mtime": 1786507559.0215912,
+    "seen": 1788402203.163673,
+    "ast_hash": "597c78cda31c288a1a29fb6444b0d314",
+    "semantic_hash": "597c78cda31c288a1a29fb6444b0d314"
+  },
+  "storeroom/storeroom-fe-angular/src/app/app.component.spec.ts": {
+    "mtime": 1785950006.969016,
+    "seen": 1788402203.1636736,
+    "ast_hash": "68df1cd6661f391c996a4c37429b404a",
+    "semantic_hash": "68df1cd6661f391c996a4c37429b404a"
+  },
+  "storeroom/storeroom-fe-angular/src/app/app.component.ts": {
+    "mtime": 1788401630.0708158,
+    "seen": 1788402203.1636744,
+    "ast_hash": "1b7e2eb560dd6e9ac692ecb56aa96cf7",
+    "semantic_hash": "1b7e2eb560dd6e9ac692ecb56aa96cf7"
+  },
+  "storeroom/storeroom-fe-angular/src/app/app.config.ts": {
+    "mtime": 1785949372.0829685,
+    "seen": 1788402203.163675,
+    "ast_hash": "a93506ace2360facd76431e5785035ab",
+    "semantic_hash": "a93506ace2360facd76431e5785035ab"
+  },
+  "storeroom/storeroom-fe-angular/src/app/app.routes.ts": {
+    "mtime": 1785949372.0834703,
+    "seen": 1788402203.1636758,
+    "ast_hash": "9e82134f3e41732656270447c4c872fe",
+    "semantic_hash": "9e82134f3e41732656270447c4c872fe"
+  },
+  "storeroom/storeroom-fe-angular/src/main.ts": {
+    "mtime": 1785949372.0766516,
+    "seen": 1788402203.1636767,
+    "ast_hash": "c986c915181c0d91d6ea1af9fc003131",
+    "semantic_hash": "c986c915181c0d91d6ea1af9fc003131"
+  },
+  "storeroom/storeroom-fe-angular/tsconfig.app.json": {
+    "mtime": 1785949372.0737958,
+    "seen": 1788402203.1636772,
+    "ast_hash": "116676e563336466ec75530abfc45c6e",
+    "semantic_hash": "116676e563336466ec75530abfc45c6e"
+  },
+  "storeroom/storeroom-fe-angular/tsconfig.json": {
+    "mtime": 1785949372.0732095,
+    "seen": 1788402203.163678,
+    "ast_hash": "8f0a801a3ff2da443ca2e06293278535",
+    "semantic_hash": "8f0a801a3ff2da443ca2e06293278535"
+  },
+  "storeroom/storeroom-fe-angular/tsconfig.spec.json": {
+    "mtime": 1785949372.0743148,
+    "seen": 1788402203.1636786,
+    "ast_hash": "92e39b35db8f03ccae823e77a9a21e71",
+    "semantic_hash": "92e39b35db8f03ccae823e77a9a21e71"
+  },
+  "storeroom/storeroom-legacy/js/dispensa.js": {
+    "mtime": 1785949192.7995417,
+    "seen": 1788402203.1636796,
+    "ast_hash": "821231cff4327dbc2b67b78cb669048a",
+    "semantic_hash": "821231cff4327dbc2b67b78cb669048a"
+  },
+  "tsconfig.desloppify.json": {
+    "mtime": 1788402168.2840056,
+    "seen": 1788402203.16368,
+    "ast_hash": "4b7c009d95340d271e56a7b2159ec650",
+    "semantic_hash": "4b7c009d95340d271e56a7b2159ec650"
+  }
+}

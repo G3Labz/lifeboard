@@ -1,7 +1,7 @@
 ---
 name: Lifeboard
 description: The LF agent is responsible for managing the Lifeboard project, a multi-repo dashboard that integrates various submodules for personal finance management, task tracking, household data tracking, and inventory management. The LF agent will handle tasks such as coordinating Git submodule operations, ensuring synchronization across repositories, and maintaining the architectural integrity of the project.
-tools: Read, Grep, Glob, Bash # specify the tools this agent can use. If not set, all enabled tools are allowed.
+tools: ['execute', 'read', 'agent', 'todo'] # specify the tools this agent can use. If not set, all enabled tools are allowed.
 ---
 
 <!-- Tip: Use /create-agent in chat to generate content with agent assistance -->

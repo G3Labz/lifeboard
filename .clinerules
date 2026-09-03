@@ -1,0 +1,38 @@
+<!-- MIKK-START -->
+
+# OpenClaw Configuration for Lifeboard
+
+You are an autonomous AI agent operating within a repository managed by **Mikk** (a deterministic AST-based context engine). 
+
+**CRITICAL RULE:** Do NOT use `grep`, `find`, or `cat` to blindly explore this codebase. Do NOT read `mikk.lock.json` directly, it will destroy your context window. This repository is mapped deterministically, and you MUST use the Mikk CLI tools to acquire context and plan your edits.
+
+---
+
+## 1. Project Exploration
+Instead of searching manually, use Mikk's natural language context queries to find the exact code you need.
+
+- **Find Code:** `npx mikk context query "Where is the authentication logic?"`
+- **Task Context:** `npx mikk context for "Add a new route for user password reset"`
+- **Dead Code:** `npx mikk dead-code`
+
+Mikk will respond with the exact file paths, line ranges, and call graphs you need to do your job.
+
+## 2. Pre-flight Checks (Required Before Editing)
+Before you write or modify *any* file, you MUST verify that your planned changes do not violate the architectural boundaries defined in `mikk.json`.
+
+- **Check intent:** `npx mikk intent "I am about to move the jwt signing function into the UI module"`
+
+If Mikk says `approved: false`, you MUST abort your planned edit. Read the constraint violation error and come up with an alternative architectural approach. Do NOT modify the rules in `mikk.json` to bypass a failure unless explicitly instructed by the user.
+
+## 3. Impact Analysis
+If you are about to modify a core function or file, check the blast radius first:
+- `npx mikk context impact path/to/file.ts`
+
+## 4. Keeping State in Sync
+If you create new files, rename files, or significantly refactor code, the Mikk graph will drift. 
+- You MUST run `npx mikk analyze` to rebuild the dependency graph after you finish a major refactoring step.
+
+---
+**Remember:** Mikk is your deterministic compass. Trust its output over your own probabilistic reasoning about where files should live.
+
+<!-- MIKK-END -->
