@@ -109,7 +109,25 @@
   - Concrete release milestone plans (Current, Next, Upcoming, Production/Vision).
   - Empirical changelog linking completed work to version tags.
   - Feature control & configuration strategy (environment toggles, repository swapping, application configuration).
-- **Verification**: Verified file creation and markdown integrity across all 14 paths; confirmed Angular production builds clean.
+## [2026-09-21] Finances Frontend Multi-Stage Containerization & Routing
+
+### 1. Multi-Stage Docker Architecture for Angular v22 SPA
+- **Target**: `Finances/finances-fe-angular`
+- **Builder Stage**:
+  - Image: `node:22-alpine`
+  - Utilizes `npm install --legacy-peer-deps` due to strict Angular v22 / TypeScript 7 peer-dependency resolution flags.
+  - Angular build output compiles to `/app/dist/finances-app/browser` under `@angular-devkit/build-angular:application`.
+- **Runtime Web Server Stage**:
+  - Image: `nginx:1.27-alpine`
+  - Static distribution copied to `/usr/share/nginx/html`.
+  - Configured `nginx.conf` with:
+    - HTML5 history pushState SPA routing via `try_files $uri $uri/ /index.html;`.
+    - Long-term asset caching (`Cache-Control: public, max-age=31536000, immutable`).
+    - Standard security headers (`X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy`, `server_tokens off;`).
+    - Gzip compression for static assets.
+- **Compose & Build Optimization**:
+  - Configured `.dockerignore` to discard `node_modules`, `dist`, `.git`, `.angular`, and documentation files.
+  - Synchronized `compose.yaml` and `compose.example.yaml` with service `container_name: finances-fe-angular`, port mapping `4201:80`, and restart policy `unless-stopped`.
 
 
 
